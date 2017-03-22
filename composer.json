@@ -1,0 +1,11 @@
+{
+    "name": "umn/lightning_umn",
+    "type": "drupal-profile-custom",
+    "authors": [
+        {
+            "name": "Jim Hart",
+            "email": "HART0554@UMN.EDU"
+        }
+    ],
+    "require": {}
+}
