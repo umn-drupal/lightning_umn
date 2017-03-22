@@ -1,0 +1,21 @@
+name: 'Lightning UMN'
+type: profile
+core: '8.x'
+dependencies:
+  - features
+  - features_ui
+  - simplesamlphp_auth
+  - pathauto
+  - acquia_connector
+  - robotstxt
+  - umn_simplesaml
+  - umn_default_time
+
+themes:
+  - cog_umn
+  - seven
+
+base profile:
+  name: lightning
+  excluded_dependencies:
+    - lightning_preview
