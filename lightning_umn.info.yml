@@ -9,7 +9,6 @@ dependencies:
   - acquia_connector
   - robotstxt
   - umn_simplesaml
-  - umn_default_time
 
 themes:
   - cog_umn
