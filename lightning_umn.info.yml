@@ -8,6 +8,7 @@ dependencies:
   - pathauto
   - acquia_connector
   - robotstxt
+  - syslog
 
 themes:
   - cog_umn
