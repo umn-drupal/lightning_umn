@@ -9,6 +9,7 @@ dependencies:
   - acquia_connector
   - robotstxt
   - syslog
+  - umn_search
 
 themes:
   - cog_umn
