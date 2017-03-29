@@ -8,7 +8,6 @@ dependencies:
   - pathauto
   - acquia_connector
   - robotstxt
-  - umn_simplesaml
 
 themes:
   - cog_umn
