@@ -1,10 +1,11 @@
 name: 'Lightning UMN'
 type: profile
 core: '8.x'
+distribution:
+  name: 'Lightning UMN'
 dependencies:
   - features
   - features_ui
-  - simplesamlphp_auth
   - pathauto
   - acquia_connector
   - robotstxt
@@ -12,7 +13,8 @@ dependencies:
   - umn_search
 
 themes:
-  - cog_umn
+  - bootstrap
+  - bootstrap_umn
   - seven
 
 base profile:

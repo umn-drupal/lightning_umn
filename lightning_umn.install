@@ -11,4 +11,5 @@
 function lightning_umn_install() {
   // Add code here perform additional site information tasks, generate sample
   // content, etc.
+  \Drupal::service('theme_handler')->setDefault('bootstrap_umn');
 }
