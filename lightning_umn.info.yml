@@ -8,6 +8,7 @@ dependencies:
   - features_ui
   - pathauto
   - acquia_connector
+  - simplesamlphp_auth
   - robotstxt
   - syslog
   - umn_search
