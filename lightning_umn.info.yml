@@ -21,3 +21,4 @@ base profile:
   name: lightning
   excluded_dependencies:
     - lightning_preview
+    - lightning_search
