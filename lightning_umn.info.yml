@@ -12,6 +12,7 @@ dependencies:
   - robotstxt
   - syslog
   - umn_search
+  - paragraphs
 
 themes:
   - bootstrap
