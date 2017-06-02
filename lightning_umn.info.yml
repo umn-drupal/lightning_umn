@@ -13,6 +13,8 @@ dependencies:
   - syslog
   - umn_search
   - paragraphs
+  - admin_toolbar
+  - admin_toolbar_tools
 
 themes:
   - bootstrap
