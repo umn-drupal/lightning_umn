@@ -17,7 +17,7 @@ function lightning_umn_form_install_configure_form_alter(&$form, FormStateInterf
   $form['regional_settings']['date_default_timezone']['#default_value'] = 'America/Chicago';
 
   // Turn off automatic update
-  $form['update_notifications']['update_status_module']['#default_value'] = [0,0];
+  $form['update_notifications']['enable_update_status_module']['#default_value'] = [0];
 
   // Hide admin password field
   $form['admin_account']['account']['pass']['#type'] = 'hidden';
