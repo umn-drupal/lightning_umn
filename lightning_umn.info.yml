@@ -17,8 +17,8 @@ dependencies:
   - admin_toolbar_tools
 
 themes:
-  - bootstrap
-  - bootstrap_umn
+  - cog
+  - cog_umn
   - seven
 
 base profile:
