@@ -16,6 +16,7 @@ dependencies:
   - admin_toolbar
   - admin_toolbar_tools
   - memcache
+  - imagick
 
 themes:
   - cog
