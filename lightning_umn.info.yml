@@ -4,19 +4,37 @@ core: '8.x'
 distribution:
   name: 'Lightning UMN'
 dependencies:
+  - big_pipe
+  - inline_form_errors
   - features
   - features_ui
   - pathauto
-  - acquia_connector
-  - simplesamlphp_auth
   - robotstxt
   - syslog
   - umn_search
   - paragraphs
   - admin_toolbar
   - admin_toolbar_tools
-  - memcache
   - imagick
+  - acquia_purge
+  - field_group
+  - select_or_other
+  - address
+  - datetime_range
+  - iframe
+  - simple_gmap
+  - tablefield
+  - telephone
+  - editor_advanced_link
+  - linkit
+  - permissions_filter
+  - redirect
+  - fast404
+  - slick_views
+  - slick_video
+  - slick_ui
+  - slick_paragraphs
+  - slick_media
 
 themes:
   - cog
