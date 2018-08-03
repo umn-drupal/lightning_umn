@@ -35,6 +35,7 @@ dependencies:
   - slick_ui
   - slick_paragraphs
   - slick_media
+  - fpa
 
 themes:
   - cog
