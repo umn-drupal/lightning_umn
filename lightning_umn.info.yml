@@ -27,7 +27,6 @@ dependencies:
   - telephone
   - editor_advanced_link
   - linkit
-  - permissions_filter
   - redirect
   - fast404
   - slick_views
