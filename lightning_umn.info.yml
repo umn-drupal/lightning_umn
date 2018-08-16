@@ -35,6 +35,8 @@ dependencies:
   - slick_paragraphs
   - slick_media
   - fpa
+  - admin_toolbar_links_access_filter
+  - roleassign
 
 themes:
   - cog
