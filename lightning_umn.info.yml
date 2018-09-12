@@ -3,7 +3,7 @@ type: profile
 core: '8.x'
 distribution:
   name: 'Lightning UMN'
-dependencies:
+install:
   - big_pipe
   - inline_form_errors
   - features
@@ -43,8 +43,7 @@ themes:
   - cog_umn
   - seven
 
-base profile:
-  name: lightning
-  excluded_dependencies:
-    - lightning_preview
-    - lightning_search
+base profile: lightning
+exclude:
+  - lightning_preview
+  - lightning_search
