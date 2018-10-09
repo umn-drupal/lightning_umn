@@ -37,6 +37,9 @@ install:
   - fpa
   - admin_toolbar_links_access_filter
   - roleassign
+  - acquia_connector
+  - simplesamlphp_auth
+  - memcache
 
 themes:
   - cog
