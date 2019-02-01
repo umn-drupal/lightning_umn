@@ -1,8 +1,8 @@
-name: 'Lightning UMN'
+name: "Lightning UMN"
 type: profile
-core: '8.x'
+core: "8.x"
 distribution:
-  name: 'Lightning UMN'
+  name: "Lightning UMN"
 install:
   - big_pipe
   - inline_form_errors
@@ -43,8 +43,7 @@ install:
   - honeypot
 
 themes:
-  - cog
-  - cog_umn
+  - folwell
   - seven
 
 base profile: lightning

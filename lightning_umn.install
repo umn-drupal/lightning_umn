@@ -8,14 +8,15 @@
 /**
  * Implements hook_install().
  */
-function lightning_umn_install() {
-  // Add code here perform additional site information tasks, generate sample
-  // content, etc.
-	\Drupal::service('theme_handler')->setDefault('cog_umn');
+function lightning_umn_install()
+{
+    // Add code here perform additional site information tasks, generate sample
+    // content, etc.
+    \Drupal::service('theme_handler')->setDefault('folwell');
 
     // Honeypot permission
     $authenticated_rid  = \Drupal\user\RoleInterface::AUTHENTICATED_ID;
-    $authenticated_role = \Drupal\user\Entity\Role::load( $authenticated_rid  );
+    $authenticated_role = \Drupal\user\Entity\Role::load($authenticated_rid);
     $authenticated_role->grantPermission("bypass honeypot protection");
     $authenticated_role->save();
 }
