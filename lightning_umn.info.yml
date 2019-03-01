@@ -41,6 +41,7 @@ install:
   - simplesamlphp_auth
   - memcache
   - honeypot
+  - umn_superfish
 
 themes:
   - folwell
