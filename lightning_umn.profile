@@ -30,6 +30,8 @@ function lightning_umn_form_user_login_form_alter(&$form, FormStateInterface $fo
     if (!empty($form['simplesamlphp_auth_login_link'])) {
         $allowed_users = \Drupal::config('simplesamlphp_auth.settings')->get('allow');
         if (!$allowed_users['default_login'] || $allowed_users['default_login_users'] === '1') {
+            $form['#prefix'] = t('<div class="status-messages"><div class="warning">Drupal username/password login is disabled. Please use the button below to log in with your University of Minnesota account.</div></div>');
+            $form['simplesamlphp_auth_login_link']['#weight'] = -1;
             $form['name']['#attributes']['disabled'] = 'true';
             $form['pass']['#attributes']['disabled'] = 'true';
             $form['actions']['submit']['#attributes'] = ['disabled' => 'true'];
