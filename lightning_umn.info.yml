@@ -44,6 +44,8 @@ install:
   - fontawesome
   - responsive_menu
   - menu_block
+  - folwell_blocks
+  - auto_entitylabel
 
 themes:
   - folwell
