@@ -7,6 +7,8 @@ dependencies:
 third_party_settings:
   lightning_core:
     description: ''
+_core:
+  default_config_hash: YbmWJ3Z3VwAISy91xfIS6cfQnfFybeRMg_scvJI6hBw
 id: dl_advanced_site_builder
 label: 'Advanced site builder'
 weight: 15

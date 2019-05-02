@@ -10,6 +10,8 @@ dependencies:
     - media.type.tweet
     - media.type.video
     - node.type.dl_news_blog
+_core:
+  default_config_hash: OXmlc-Ilbx_SCFBch0opTN80sdF8_TIO-AHy68pYhXU
 id: node.dl_news_blog.field_dl_media
 field_name: field_dl_media
 entity_type: node

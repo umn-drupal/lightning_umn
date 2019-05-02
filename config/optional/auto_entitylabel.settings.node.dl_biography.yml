@@ -1,0 +1,7 @@
+status: 1
+pattern: '[node:field_dl_last_name:value] [node:field_dl_first_name:value]'
+php: false
+escape: false
+dependencies:
+  config:
+    - node.type.dl_biography

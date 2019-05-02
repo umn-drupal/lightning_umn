@@ -7,6 +7,8 @@ dependencies:
     - node.type.dl_biography
   module:
     - text
+_core:
+  default_config_hash: _qIJnYOp6C5Ci-smIfOzzQuZwlKhMf48pSBkBDteDLU
 id: node.dl_biography.field_dl_biography
 field_name: field_dl_biography
 entity_type: node

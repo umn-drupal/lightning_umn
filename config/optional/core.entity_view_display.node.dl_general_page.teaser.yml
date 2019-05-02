@@ -4,30 +4,58 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.dl_general_page.body
+    - field.field.node.dl_general_page.field_dl_body
+    - field.field.node.dl_general_page.field_dl_media
+    - field.field.node.dl_general_page.field_dl_paragraphs
+    - field.field.node.dl_general_page.field_dl_tags
+    - field.field.node.dl_general_page.layout_builder__layout
     - node.type.dl_general_page
   module:
-    - text
+    - layout_builder
+    - layout_discovery
+    - panelizer
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          ed8138c7-0a5f-448b-b01e-f084fbb30046:
+            uuid: ed8138c7-0a5f-448b-b01e-f084fbb30046
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:dl_general_page:links'
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+_core:
+  default_config_hash: tFWUd0ANmUQ0Fgwds-X2U6Y-W8iLYqC90JIn6Ak-ceI
 id: node.dl_general_page.teaser
 targetEntityType: node
 bundle: dl_general_page
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     settings: {  }
     third_party_settings: {  }
     region: content
 hidden:
+  field_dl_body: true
+  field_dl_media: true
   field_dl_paragraphs: true
   field_dl_tags: true
+  layout_builder__layout: true
   layout_selection: true

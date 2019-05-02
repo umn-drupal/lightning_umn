@@ -9,9 +9,44 @@ dependencies:
     - field.field.node.dl_biography.field_dl_first_name
     - field.field.node.dl_biography.field_dl_last_name
     - field.field.node.dl_biography.field_dl_paragraphs
+    - field.field.node.dl_biography.field_dl_portrait_image
+    - field.field.node.dl_biography.field_dl_suffix
+    - field.field.node.dl_biography.field_dl_tags
+    - field.field.node.dl_biography.field_dl_telephone_number
+    - field.field.node.dl_biography.layout_builder__layout
     - node.type.dl_biography
   module:
+    - layout_builder
+    - layout_discovery
+    - panelizer
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          54576aa2-33f7-477e-8c4a-cb1349a83a56:
+            uuid: 54576aa2-33f7-477e-8c4a-cb1349a83a56
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:dl_biography:links'
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+_core:
+  default_config_hash: FL-yMepnAOrF-sfyIf6KG-HpwMxSGRB5snVYVrclgRw
 id: node.dl_biography.teaser
 targetEntityType: node
 bundle: dl_biography
@@ -32,4 +67,5 @@ hidden:
   field_dl_suffix: true
   field_dl_tags: true
   field_dl_telephone_number: true
+  layout_builder__layout: true
   layout_selection: true

@@ -1,0 +1,22 @@
+uuid: edf8de52-21b2-4b0d-96f4-29ac67bec08d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dl_body
+    - node.type.dl_news_blog
+  module:
+    - text
+id: node.dl_news_blog.field_dl_body
+field_name: field_dl_body
+entity_type: node
+bundle: dl_news_blog
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

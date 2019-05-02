@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.field_dl_tags
     - node.type.dl_general_page
     - taxonomy.vocabulary.dl_tags
+_core:
+  default_config_hash: ll9wrjMuH0paPResXcBpVH3SlrpZaHWAVLSrbldoT_o
 id: node.dl_general_page.field_dl_tags
 field_name: field_dl_tags
 entity_type: node

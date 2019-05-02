@@ -4,24 +4,20 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.dl_news_blog.body
+    - field.field.node.dl_news_blog.field_dl_lede
+    - field.field.node.dl_news_blog.field_dl_media
+    - field.field.node.dl_news_blog.field_dl_tags
+    - field.field.node.dl_news_blog.layout_builder__layout
     - node.type.dl_news_blog
   module:
-    - text
     - user
+_core:
+  default_config_hash: HY5ImG_dAry1oko1tC-ufkglsCTq__0sK30OoiUZBlg
 id: node.dl_news_blog.teaser
 targetEntityType: node
 bundle: dl_news_blog
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 101
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     settings: {  }
@@ -29,5 +25,7 @@ content:
     region: content
 hidden:
   field_dl_lede: true
+  field_dl_media: true
   field_dl_tags: true
+  layout_builder__layout: true
   layout_selection: true

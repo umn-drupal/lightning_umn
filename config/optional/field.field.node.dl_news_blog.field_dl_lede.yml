@@ -7,6 +7,8 @@ dependencies:
     - node.type.dl_news_blog
   module:
     - text
+_core:
+  default_config_hash: RjuxL-orYf78SvD5-84dbwRdciYkNUqaG6YecbPJ8t0
 id: node.dl_news_blog.field_dl_lede
 field_name: field_dl_lede
 entity_type: node

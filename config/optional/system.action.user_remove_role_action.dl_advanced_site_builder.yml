@@ -1,4 +1,4 @@
-uuid: 8d0af22e-4ecc-4820-b2bb-6b5be50f1511
+uuid: bdabb2c3-d68b-4ffb-84c2-fef01d5dfadb
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - user.role.dl_advanced_site_builder
   module:
     - user
+_core:
+  default_config_hash: a0IXIg8HXA0Ru_LhgI-dM9zZq6OjYmwTeyRZtSFRAqs
 id: user_remove_role_action.dl_advanced_site_builder
 label: 'Remove the Advanced site builder role from the selected user(s)'
 type: user

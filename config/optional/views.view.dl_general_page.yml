@@ -1,19 +1,17 @@
-uuid: 8624b1b4-eb79-4837-86d4-3815cdad5188
+uuid: 95500e38-6a64-4ef6-98e0-5b4fa6577cbc
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - node.type.dl_biography
+    - node.type.dl_general_page
   module:
     - node
     - user
-_core:
-  default_config_hash: NRRkrnximmer9jWBfaA22TBCv7TpdJN6MsGxML1r3A0
-id: dl_biographies
-label: Biographies
+id: dl_general_page
+label: 'General Page'
 module: views
-description: 'Shows biographical data'
+description: ''
 tag: ''
 base_table: node_field_data
 base_field: nid
@@ -139,7 +137,7 @@ display:
           table: node_field_data
           field: type
           value:
-            dl_biography: dl_biography
+            dl_general_page: dl_general_page
           entity_type: node
           entity_field: type
           plugin_id: bundle
@@ -159,13 +157,12 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Biographies
+      title: 'General Page'
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
-      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -275,7 +272,7 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: biographies
+      path: general-page
     cache_metadata:
       max-age: -1
       contexts:

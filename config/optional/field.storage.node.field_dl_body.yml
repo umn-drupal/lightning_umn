@@ -1,16 +1,14 @@
-uuid: 95917c8d-63ba-41e4-8168-727add8cfe03
+uuid: 52ba0a63-2abf-4dca-a3d6-812887bd5de2
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - text
-_core:
-  default_config_hash: DmdlZd17v3-OWZrTwDsxKRQYw-5YFIBXmpQUMrIsKjE
-id: node.field_dl_lede
-field_name: field_dl_lede
+id: node.field_dl_body
+field_name: field_dl_body
 entity_type: node
-type: text_long
+type: text_with_summary
 settings: {  }
 module: text
 locked: false

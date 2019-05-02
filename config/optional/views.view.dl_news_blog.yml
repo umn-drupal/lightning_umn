@@ -8,6 +8,8 @@ dependencies:
   module:
     - node
     - user
+_core:
+  default_config_hash: UaUBdZwTBof5qBn_lSKbyRhhaco-mJi1Pr_wp8ZtnBk
 id: dl_news_blog
 label: 'News / Blog'
 module: views

@@ -20,6 +20,8 @@ dependencies:
     - path
     - telephone
     - text
+_core:
+  default_config_hash: TdqkAXQgFLFXYmbXaVa95S076Um3TSqwnp1HML5Xnm4
 id: node.dl_biography.default
 targetEntityType: node
 bundle: dl_biography

@@ -1,0 +1,21 @@
+uuid: 8b08a16f-d025-4241-beb3-322ff4050d5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.layout_builder__layout
+    - node.type.dl_biography
+  module:
+    - layout_builder
+id: node.dl_biography.layout_builder__layout
+field_name: layout_builder__layout
+entity_type: node
+bundle: dl_biography
+label: Layout
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: layout_section

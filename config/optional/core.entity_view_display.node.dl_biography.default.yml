@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.dl_biography.field_dl_suffix
     - field.field.node.dl_biography.field_dl_tags
     - field.field.node.dl_biography.field_dl_telephone_number
+    - field.field.node.dl_biography.layout_builder__layout
     - node.type.dl_biography
   module:
     - entity_reference_revisions
@@ -19,11 +20,12 @@ dependencies:
     - layout_builder
     - layout_builder_restrictions
     - layout_discovery
+    - panelizer
     - text
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
+    allow_custom: true
     enabled: true
     sections:
       -
@@ -190,9 +192,45 @@ third_party_settings:
         third_party_settings: {  }
   layout_builder_restrictions:
     allowed_blocks:
-      'Chaos tools':
-        - 'entity_view:node'
+      Content:
+        - 'entity_field:node:field_dl_biography'
+        - 'entity_field:node:field_dl_email_address'
+        - 'entity_field:node:field_dl_first_name'
+        - 'entity_field:node:field_dl_last_name'
+        - 'entity_field:node:field_dl_media'
+        - 'entity_field:node:field_dl_paragraphs'
+        - 'entity_field:node:field_dl_portrait_image'
+        - 'entity_field:node:field_dl_suffix'
+        - 'entity_field:node:field_dl_tags'
+        - 'entity_field:node:field_dl_telephone_number'
+        - 'entity_field:node:title'
+      core:
+        - page_title_block
+      Forms: {  }
+      Help: {  }
+      'Lists (Views)':
+        - 'views_block:dl_biographies-block_1'
+        - 'views_block:dl_general_page-block_1'
+        - 'views_block:dl_news_blog-block_1'
+      Menus:
+        - 'system_menu_block:main'
+        - 'menu_block:main'
+      'Moderation Dashboard': {  }
+      'Responsive menu': {  }
+      'SimpleSAMLphp Authentication': {  }
+      Superfish: {  }
+      System:
+        - system_breadcrumb_block
+        - system_main_block
+      'User fields': {  }
     allowed_layouts: {  }
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
+_core:
+  default_config_hash: xZgxTOYIQ4MVggPTnHcsiy9kQ1350poNffSuuHN0hsA
 id: node.dl_biography.default
 targetEntityType: node
 bundle: dl_biography
@@ -274,4 +312,5 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  layout_builder__layout: true

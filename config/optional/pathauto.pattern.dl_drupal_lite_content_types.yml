@@ -1,0 +1,24 @@
+uuid: 6a38d9a8-cc30-4201-ad0d-fdc974ecd513
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: dl_drupal_lite_content_types
+label: 'Drupal Lite content types'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  29cb86ca-920d-400d-8ab7-a2ef082969b4:
+    id: node_type
+    bundles:
+      dl_biography: dl_biography
+      dl_general_page: dl_general_page
+      dl_news_blog: dl_news_blog
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 29cb86ca-920d-400d-8ab7-a2ef082969b4
+selection_logic: and
+weight: -5
+relationships: {  }

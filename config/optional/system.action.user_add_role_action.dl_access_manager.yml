@@ -1,4 +1,4 @@
-uuid: c44af6e8-3099-4de9-95ee-caa695ba75b6
+uuid: 711b7f75-ccd2-451e-9d57-f4e13d402b82
 langcode: en
 status: true
 dependencies:
@@ -6,6 +6,8 @@ dependencies:
     - user.role.dl_access_manager
   module:
     - user
+_core:
+  default_config_hash: 1prktTM3Iv1ANypHtGFtvTdX5gy97JihmynJNOictWU
 id: user_add_role_action.dl_access_manager
 label: 'Add the Access Manager role to the selected user(s)'
 type: user

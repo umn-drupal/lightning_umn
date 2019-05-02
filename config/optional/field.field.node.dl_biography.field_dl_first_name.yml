@@ -5,6 +5,8 @@ dependencies:
   config:
     - field.storage.node.field_dl_first_name
     - node.type.dl_biography
+_core:
+  default_config_hash: 0muth2jEvYjJj59S0Po4LaKNCs1mYZzk5q8cCZLuJzw
 id: node.dl_biography.field_dl_first_name
 field_name: field_dl_first_name
 entity_type: node
