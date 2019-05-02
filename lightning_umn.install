@@ -30,7 +30,7 @@ function lightning_umn_site_install_finished($install_state)
     $biography_entitylabel_config = [
         'status' => 1,
         'pattern' => '[node:field_dl_first_name:value] [node:field_dl_last_name:value]',
-        'php' => FALSE
+        'php' => FALSE,
         'escape' => FALSE,
         'dependencies' => [
             'config' => [
