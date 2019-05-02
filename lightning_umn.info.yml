@@ -7,7 +7,6 @@ install:
   - big_pipe
   - inline_form_errors
   - features
-  - features_ui
   - pathauto
   - robotstxt
   - syslog
