@@ -20,3 +20,24 @@ function lightning_umn_install()
     $authenticated_role->grantPermission("bypass honeypot protection");
     $authenticated_role->save();
 }
+
+function lightning_umn_site_install_finished($install_state)
+{
+    // Auto Entity Label config is not saving as part of config/optional, delegating
+    // it to post install hook.
+    $config_factory = Drupal::configFactory();
+    $entitylabel_config = $config_factory->getEditable('auto_entitylabel.settings.node.dl_biography');
+    $biography_entitylabel_config = [
+        'status' => 1,
+        'pattern' => '[node:field_dl_first_name:value] [node:field_dl_last_name:value]',
+        'php' => FALSE
+        'escape' => FALSE,
+        'dependencies' => [
+            'config' => [
+                'node.type.dl_biography',
+            ],
+        ],
+    ];
+    $entitylabel_config->setData($biography_entitylabel_config);
+    $entitylabel_config->save();
+}
