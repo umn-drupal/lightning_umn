@@ -1,0 +1,19 @@
+uuid: d589ac9c-6b06-4205-8021-781f4b4e63b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dl_email_address
+    - node.type.dl_biography
+id: node.dl_biography.field_dl_email_address
+field_name: field_dl_email_address
+entity_type: node
+bundle: dl_biography
+label: 'Email Address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

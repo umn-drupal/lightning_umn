@@ -1,0 +1,21 @@
+uuid: efedbb3e-2a8c-414a-a23b-ada545eee4d4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dl_telephone_number
+    - node.type.dl_biography
+  module:
+    - telephone
+id: node.dl_biography.field_dl_telephone_number
+field_name: field_dl_telephone_number
+entity_type: node
+bundle: dl_biography
+label: 'Telephone Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

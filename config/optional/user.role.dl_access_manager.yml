@@ -1,0 +1,20 @@
+uuid: dcc41c92-ce05-44dc-8fc6-ae45301769b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: dl_access_manager
+label: 'Access Manager'
+weight: 16
+is_admin: null
+permissions:
+  - 'access user profiles'
+  - 'administer users'
+  - 'assign roles'
+  - 'cancel account'
+  - 'select account cancellation method'
+  - 'use text format rich_text'

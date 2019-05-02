@@ -1,0 +1,29 @@
+uuid: 94e5685c-bf54-4a44-940c-fc4fa4e6e80a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dl_tags
+    - node.type.dl_biography
+    - taxonomy.vocabulary.dl_tags
+id: node.dl_biography.field_dl_tags
+field_name: field_dl_tags
+entity_type: node
+bundle: dl_biography
+label: Tags
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      dl_tags: dl_tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

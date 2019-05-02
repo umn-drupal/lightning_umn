@@ -1,0 +1,21 @@
+uuid: 3e298780-1324-4f4f-a891-1b16a76ba8fd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dl_lede
+    - node.type.dl_news_blog
+  module:
+    - text
+id: node.dl_news_blog.field_dl_lede
+field_name: field_dl_lede
+entity_type: node
+bundle: dl_news_blog
+label: Lede
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

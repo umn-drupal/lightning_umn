@@ -1,0 +1,14 @@
+uuid: 6ffabf8d-6683-4b83-a0da-b033d73329e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.dl_advanced_site_builder
+  module:
+    - user
+id: user_add_role_action.dl_advanced_site_builder
+label: 'Add the Advanced site builder role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: dl_advanced_site_builder

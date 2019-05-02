@@ -1,0 +1,37 @@
+uuid: e216d4d3-5cf9-4d4f-9273-4908469aad5b
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: dl_advanced_site_builder
+label: 'Advanced site builder'
+weight: 15
+is_admin: null
+permissions:
+  - 'add consumer entities'
+  - 'administer block_content display'
+  - 'administer blocks'
+  - 'administer consumer entities'
+  - 'administer contact_message display'
+  - 'administer contact_message fields'
+  - 'administer crop'
+  - 'administer crop types'
+  - 'administer display modes'
+  - 'administer image styles'
+  - 'administer linkit profiles'
+  - 'administer media display'
+  - 'administer media types'
+  - 'administer node display'
+  - 'administer paragraph display'
+  - 'administer shortcuts'
+  - 'administer taxonomy_term display'
+  - 'administer user display'
+  - 'administer views'
+  - 'delete own consumer entities'
+  - 'update own consumer entities'
+  - 'use text format rich_text'
+  - 'view own consumer entities'

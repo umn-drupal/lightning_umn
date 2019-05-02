@@ -1,0 +1,33 @@
+uuid: 4f1a8c97-fd29-422b-8f42-202cc9939bce
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dl_general_page.body
+    - node.type.dl_general_page
+  module:
+    - text
+    - user
+id: node.dl_general_page.teaser
+targetEntityType: node
+bundle: dl_general_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_dl_paragraphs: true
+  field_dl_tags: true
+  layout_selection: true

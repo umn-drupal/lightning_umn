@@ -1,0 +1,33 @@
+uuid: 8bee3f71-fdea-4085-a2d0-76b424a1d162
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dl_news_blog.body
+    - node.type.dl_news_blog
+  module:
+    - text
+    - user
+id: node.dl_news_blog.teaser
+targetEntityType: node
+bundle: dl_news_blog
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_dl_lede: true
+  field_dl_tags: true
+  layout_selection: true

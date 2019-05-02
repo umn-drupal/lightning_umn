@@ -1,0 +1,35 @@
+uuid: bb4dfda5-1bbf-4dee-a9ea-bca98160855a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.dl_biography.field_dl_biography
+    - field.field.node.dl_biography.field_dl_email_address
+    - field.field.node.dl_biography.field_dl_first_name
+    - field.field.node.dl_biography.field_dl_last_name
+    - field.field.node.dl_biography.field_dl_paragraphs
+    - node.type.dl_biography
+  module:
+    - user
+id: node.dl_biography.teaser
+targetEntityType: node
+bundle: dl_biography
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_dl_biography: true
+  field_dl_email_address: true
+  field_dl_first_name: true
+  field_dl_last_name: true
+  field_dl_paragraphs: true
+  field_dl_portrait_image: true
+  field_dl_suffix: true
+  field_dl_tags: true
+  field_dl_telephone_number: true
+  layout_selection: true

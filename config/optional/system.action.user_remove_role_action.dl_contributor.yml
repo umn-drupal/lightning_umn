@@ -1,0 +1,14 @@
+uuid: dcd40d80-be35-4ec9-847a-ff8f96990ea9
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.dl_contributor
+  module:
+    - user
+id: user_remove_role_action.dl_contributor
+label: 'Remove the Contributor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: dl_contributor

@@ -1,0 +1,21 @@
+uuid: 0db4f5c9-4bab-419c-87e8-f0b335423333
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dl_biography
+    - node.type.dl_biography
+  module:
+    - text
+id: node.dl_biography.field_dl_biography
+field_name: field_dl_biography
+entity_type: node
+bundle: dl_biography
+label: Biography
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

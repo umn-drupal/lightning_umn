@@ -1,0 +1,56 @@
+uuid: 9dcc4716-db91-427e-9f27-ba1aa9fbf94f
+langcode: en
+status: true
+dependencies:
+  module:
+    - lightning_core
+third_party_settings:
+  lightning_core:
+    description: ''
+id: dl_content_type_manager
+label: 'Content type manager'
+weight: 14
+is_admin: null
+permissions:
+  - 'access taxonomy overview'
+  - 'administer block_content fields'
+  - 'administer block_content form display'
+  - 'administer block_content_type labels'
+  - 'administer contact_form labels'
+  - 'administer contact_message fields'
+  - 'administer contact_message form display'
+  - 'administer content types'
+  - 'administer date_format labels'
+  - 'administer entity_form_mode labels'
+  - 'administer entity_view_mode labels'
+  - 'administer filter_format labels'
+  - 'administer image_style labels'
+  - 'administer media fields'
+  - 'administer media form display'
+  - 'administer media_type labels'
+  - 'administer menu labels'
+  - 'administer meta tags'
+  - 'administer node fields'
+  - 'administer node form display'
+  - 'administer node_type labels'
+  - 'administer paragraph fields'
+  - 'administer paragraph form display'
+  - 'administer paragraphs types'
+  - 'administer pathauto'
+  - 'administer shortcut_set labels'
+  - 'administer taxonomy'
+  - 'administer taxonomy_term fields'
+  - 'administer taxonomy_term form display'
+  - 'administer taxonomy_vocabulary labels'
+  - 'administer url aliases'
+  - 'administer user fields'
+  - 'administer user form display'
+  - 'administer user_role labels'
+  - 'administer view labels'
+  - 'administer workflow labels'
+  - 'create terms in tags'
+  - 'create url aliases'
+  - 'customize shortcut links'
+  - 'delete terms in tags'
+  - 'edit terms in tags'
+  - 'use text format rich_text'

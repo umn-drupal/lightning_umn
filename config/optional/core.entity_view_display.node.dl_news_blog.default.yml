@@ -1,0 +1,144 @@
+uuid: 441de9d8-9528-4c89-8f2a-52ea8a37fb75
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.dl_news_blog.body
+    - field.field.node.dl_news_blog.field_dl_lede
+    - field.field.node.dl_news_blog.field_dl_media
+    - field.field.node.dl_news_blog.field_dl_tags
+    - node.type.dl_news_blog
+  module:
+    - layout_builder
+    - layout_builder_restrictions
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          67b0e933-6f3e-4199-a0bd-43e2bca1e523:
+            uuid: 67b0e933-6f3e-4199-a0bd-43e2bca1e523
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:dl_news_blog:links'
+            additional: {  }
+            weight: 0
+          2efd9cb4-c67b-4ba3-b385-a192190e16f8:
+            uuid: 2efd9cb4-c67b-4ba3-b385-a192190e16f8
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dl_news_blog:body'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+            additional: {  }
+            weight: 1
+          b33373bc-9b2d-4173-a5af-f12a33257d59:
+            uuid: b33373bc-9b2d-4173-a5af-f12a33257d59
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dl_news_blog:field_dl_lede'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 2
+          bf8c8d5a-64cb-4c78-a7ee-1d0c464d4e13:
+            uuid: bf8c8d5a-64cb-4c78-a7ee-1d0c464d4e13
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dl_news_blog:field_dl_media'
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            additional: {  }
+            weight: 3
+          6a4db758-cde0-4245-87ae-2ab0f263600a:
+            uuid: 6a4db758-cde0-4245-87ae-2ab0f263600a
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dl_news_blog:field_dl_tags'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 4
+        third_party_settings: {  }
+  layout_builder_restrictions:
+    allowed_blocks: {  }
+    allowed_layouts: {  }
+id: node.dl_news_blog.default
+targetEntityType: node
+bundle: dl_news_blog
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_dl_lede:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_dl_media:
+    type: entity_reference_entity_view
+    weight: 103
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_dl_tags:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

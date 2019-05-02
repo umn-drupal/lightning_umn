@@ -1,0 +1,277 @@
+uuid: 2b0bff66-852a-42f1-b1d3-5bece3bfd711
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.dl_biography.field_dl_biography
+    - field.field.node.dl_biography.field_dl_email_address
+    - field.field.node.dl_biography.field_dl_first_name
+    - field.field.node.dl_biography.field_dl_last_name
+    - field.field.node.dl_biography.field_dl_paragraphs
+    - field.field.node.dl_biography.field_dl_portrait_image
+    - field.field.node.dl_biography.field_dl_suffix
+    - field.field.node.dl_biography.field_dl_tags
+    - field.field.node.dl_biography.field_dl_telephone_number
+    - node.type.dl_biography
+  module:
+    - entity_reference_revisions
+    - image
+    - layout_builder
+    - layout_builder_restrictions
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          15037980-ee34-4adb-adac-0aeede7056fe:
+            uuid: 15037980-ee34-4adb-adac-0aeede7056fe
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:dl_biography:links'
+            additional: {  }
+            weight: 3
+          16fa88bf-5e7e-4413-8b91-971b2c4a36a0:
+            uuid: 16fa88bf-5e7e-4413-8b91-971b2c4a36a0
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dl_biography:field_dl_email_address'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: basic_string
+            additional: {  }
+            weight: 4
+          aa2ff685-4554-4b3d-b6d3-4c74119637a3:
+            uuid: aa2ff685-4554-4b3d-b6d3-4c74119637a3
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dl_biography:field_dl_paragraphs'
+              formatter:
+                type: entity_reference_revisions_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: ''
+                third_party_settings: {  }
+            additional: {  }
+            weight: 6
+          8b99528d-d1af-43ce-a1f2-51b99061d911:
+            uuid: 8b99528d-d1af-43ce-a1f2-51b99061d911
+            region: content
+            configuration:
+              id: 'field_block:node:dl_biography:field_dl_portrait_image'
+              label: 'Portrait Image'
+              provider: layout_builder
+              label_display: visible
+              formatter:
+                label: hidden
+                type: image
+                settings:
+                  image_style: medium
+                  image_link: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 7
+          938f0c9d-b239-4df0-8bcf-8827875ed293:
+            uuid: 938f0c9d-b239-4df0-8bcf-8827875ed293
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dl_biography:field_dl_tags'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 9
+          876be432-3873-45dd-b296-90f3400008f1:
+            uuid: 876be432-3873-45dd-b296-90f3400008f1
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dl_biography:field_dl_first_name'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 0
+          3f692d58-9c39-4830-84c3-c93442693573:
+            uuid: 3f692d58-9c39-4830-84c3-c93442693573
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dl_biography:field_dl_last_name'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 1
+          4e1fbc1f-ed5e-44d0-a3c9-3be96d88399a:
+            uuid: 4e1fbc1f-ed5e-44d0-a3c9-3be96d88399a
+            region: content
+            configuration:
+              id: 'field_block:node:dl_biography:field_dl_biography'
+              label: Biography
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_default
+                settings: {  }
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 8
+          ccbe24fc-0293-466b-8ca0-410329f592bf:
+            uuid: ccbe24fc-0293-466b-8ca0-410329f592bf
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dl_biography:field_dl_telephone_number'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: basic_string
+            additional: {  }
+            weight: 5
+          203ba641-dddc-4daf-9869-6002a5fb6cdf:
+            uuid: 203ba641-dddc-4daf-9869-6002a5fb6cdf
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dl_biography:field_dl_suffix'
+              formatter:
+                label: above
+                settings:
+                  link_to_entity: false
+                third_party_settings: {  }
+                type: string
+            additional: {  }
+            weight: 2
+        third_party_settings: {  }
+  layout_builder_restrictions:
+    allowed_blocks:
+      'Chaos tools':
+        - 'entity_view:node'
+    allowed_layouts: {  }
+id: node.dl_biography.default
+targetEntityType: node
+bundle: dl_biography
+mode: default
+content:
+  field_dl_biography:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_dl_email_address:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_dl_first_name:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dl_last_name:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dl_paragraphs:
+    type: entity_reference_revisions_entity_view
+    weight: 106
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_dl_portrait_image:
+    weight: 107
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_dl_suffix:
+    weight: 108
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_dl_tags:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_dl_telephone_number:
+    weight: 110
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

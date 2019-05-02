@@ -1,0 +1,36 @@
+uuid: 0d75c771-8b05-43a5-8633-f18ebff4661f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dl_media
+    - media.type.document
+    - media.type.image
+    - media.type.instagram
+    - media.type.tweet
+    - media.type.video
+    - node.type.dl_news_blog
+id: node.dl_news_blog.field_dl_media
+field_name: field_dl_media
+entity_type: node
+bundle: dl_news_blog
+label: Media
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+      image: image
+      instagram: instagram
+      tweet: tweet
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: document
+field_type: entity_reference

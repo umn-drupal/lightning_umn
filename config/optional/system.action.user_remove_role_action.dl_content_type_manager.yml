@@ -1,0 +1,14 @@
+uuid: 45156c90-502b-4596-886e-8c986fa65385
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.dl_content_type_manager
+  module:
+    - user
+id: user_remove_role_action.dl_content_type_manager
+label: 'Remove the Content type manager role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: dl_content_type_manager
