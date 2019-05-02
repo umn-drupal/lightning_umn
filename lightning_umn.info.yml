@@ -51,5 +51,8 @@ themes:
 
 base profile: lightning
 exclude:
+  - lightning_page
+  - lightning_roles
+  - lightning_workflow
   - lightning_preview
   - lightning_search
