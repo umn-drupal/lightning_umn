@@ -45,3 +45,14 @@ function lightning_umn_site_install_finished($install_state) {
   $entitylabel_config->setData($biography_entitylabel_config);
   $entitylabel_config->save();
 }
+
+function lightning_umn_install_tasks(&$install_state) {
+  $tasks = [
+    '\Drupal\lightning_umn\Form\InstallConfigurationForm' => [
+      'display_name' => t('Install Configuration Options'),
+      'type' => 'form'
+    ]
+  ];
+
+  return $tasks;
+}
