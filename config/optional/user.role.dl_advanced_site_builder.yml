@@ -35,5 +35,5 @@ permissions:
   - 'administer views'
   - 'delete own consumer entities'
   - 'update own consumer entities'
-  - 'use text format rich_text'
+  - 'use text format folwell_ckeditor'
   - 'view own consumer entities'

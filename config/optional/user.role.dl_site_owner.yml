@@ -30,4 +30,4 @@ permissions:
   - 'delete any tweet media'
   - 'delete any video media'
   - 'update any media'
-  - 'use text format rich_text'
+  - 'use text format folwell_ckeditor'

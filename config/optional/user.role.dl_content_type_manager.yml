@@ -55,4 +55,4 @@ permissions:
   - 'customize shortcut links'
   - 'delete terms in tags'
   - 'edit terms in tags'
-  - 'use text format rich_text'
+  - 'use text format folwell_ckeditor'

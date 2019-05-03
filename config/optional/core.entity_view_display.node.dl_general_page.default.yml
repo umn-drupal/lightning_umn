@@ -72,6 +72,25 @@ third_party_settings:
                 entity: layout_builder.entity
             additional: {  }
             weight: 3
+          ab683c4d-e81f-4cd6-b436-fe648626af41:
+            uuid: ab683c4d-e81f-4cd6-b436-fe648626af41
+            region: content
+            configuration:
+              id: 'entity_field:node:field_dl_media'
+              label: Media
+              provider: ctools_block
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+                weight: 0
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 4
         third_party_settings: {  }
   panelizer:
     enable: false
@@ -107,7 +126,39 @@ third_party_settings:
         - system_breadcrumb_block
         - system_main_block
       'User fields': {  }
-    allowed_layouts: {  }
+    allowed_layouts:
+      - layout_onecol
+      - radix_bryant_flipped
+      - radix_bartlett_flipped
+      - radix_bartlett
+      - radix_boxton
+      - radix_brenham_flipped
+      - radix_brenham
+      - radix_brown
+      - radix_bryant
+      - radix_burr_flipped
+      - radix_burr
+      - radix_geary
+      - radix_harris
+      - radix_hewston_flipped
+      - radix_hewston
+      - radix_mccoppin
+      - radix_moscone_flipped
+      - radix_moscone
+      - radix_phelan
+      - radix_pond
+      - radix_rolph
+      - radix_sanderson_flipped
+      - radix_sanderson
+      - radix_selby_flipped
+      - radix_selby
+      - radix_sutro_double
+      - radix_sutro
+      - radix_taylor_flipped
+      - radix_taylor
+      - radix_webb_flipped
+      - radix_webb
+      - radix_whelan
 id: node.dl_general_page.default
 targetEntityType: node
 bundle: dl_general_page

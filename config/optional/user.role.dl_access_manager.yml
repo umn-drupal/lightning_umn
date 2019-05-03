@@ -19,4 +19,4 @@ permissions:
   - 'assign roles'
   - 'cancel account'
   - 'select account cancellation method'
-  - 'use text format rich_text'
+  - 'use text format folwell_ckeditor'

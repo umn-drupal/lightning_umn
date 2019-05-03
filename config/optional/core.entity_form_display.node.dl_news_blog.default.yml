@@ -28,7 +28,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_dl_body:
-    weight: 26
+    weight: 10
     settings:
       rows: 9
       summary_rows: 3
@@ -60,7 +60,7 @@ content:
     region: content
     third_party_settings: {  }
   field_dl_tags:
-    weight: 12
+    weight: 7
     settings:
       match_operator: CONTAINS
       size: 60

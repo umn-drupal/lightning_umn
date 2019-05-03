@@ -16,7 +16,9 @@ dependencies:
     - field.field.node.dl_biography.layout_builder__layout
     - node.type.dl_biography
   module:
+    - ctools_block
     - layout_builder
+    - layout_builder_restrictions
     - layout_discovery
     - panelizer
     - user
@@ -26,25 +28,99 @@ third_party_settings:
     enabled: true
     sections:
       -
-        layout_id: layout_onecol
+        layout_id: layout_fourcol_section
         layout_settings: {  }
         components:
-          54576aa2-33f7-477e-8c4a-cb1349a83a56:
-            uuid: 54576aa2-33f7-477e-8c4a-cb1349a83a56
-            region: content
+          68cc4e72-4e23-4204-9472-4bd31e8e141f:
+            uuid: 68cc4e72-4e23-4204-9472-4bd31e8e141f
+            region: first
             configuration:
+              id: 'field_block:node:dl_biography:field_dl_biography'
+              label: Biography
+              provider: layout_builder
               label_display: '0'
+              formatter:
+                label: above
+                type: text_summary_or_trimmed
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
               context_mapping:
                 entity: layout_builder.entity
-              id: 'extra_field_block:node:dl_biography:links'
             additional: {  }
             weight: 0
+          c63e3479-6989-45f1-948d-c226de57b244:
+            uuid: c63e3479-6989-45f1-948d-c226de57b244
+            region: second
+            configuration:
+              id: 'entity_field:node:field_dl_portrait_image'
+              label: 'Portrait Image'
+              provider: ctools_block
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: image
+                settings:
+                  image_style: folwell_fifth
+                  image_link: ''
+                third_party_settings: {  }
+                weight: 0
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          column_widths: 50-50
+        components: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components: {  }
         third_party_settings: {  }
   panelizer:
     enable: false
     custom: false
     allow: false
     default: default
+  layout_builder_restrictions:
+    allowed_blocks: {  }
+    allowed_layouts:
+      - layout_onecol
+      - radix_bryant_flipped
+      - radix_bartlett_flipped
+      - radix_bartlett
+      - radix_boxton
+      - radix_brenham_flipped
+      - radix_brenham
+      - radix_brown
+      - radix_bryant
+      - radix_burr_flipped
+      - radix_burr
+      - radix_geary
+      - radix_harris
+      - radix_hewston_flipped
+      - radix_hewston
+      - radix_mccoppin
+      - radix_moscone_flipped
+      - radix_moscone
+      - radix_phelan
+      - radix_pond
+      - radix_rolph
+      - radix_sanderson_flipped
+      - radix_sanderson
+      - radix_selby_flipped
+      - radix_selby
+      - radix_sutro_double
+      - radix_sutro
+      - radix_taylor_flipped
+      - radix_taylor
+      - radix_webb_flipped
+      - radix_webb
+      - radix_whelan
 _core:
   default_config_hash: FL-yMepnAOrF-sfyIf6KG-HpwMxSGRB5snVYVrclgRw
 id: node.dl_biography.teaser

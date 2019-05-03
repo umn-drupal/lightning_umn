@@ -11,7 +11,9 @@ dependencies:
     - field.field.node.dl_general_page.layout_builder__layout
     - node.type.dl_general_page
   module:
+    - ctools_block
     - layout_builder
+    - layout_builder_restrictions
     - layout_discovery
     - panelizer
     - user
@@ -33,6 +35,44 @@ third_party_settings:
                 entity: layout_builder.entity
               id: 'extra_field_block:node:dl_general_page:links'
             additional: {  }
+            weight: 2
+          26914487-4506-4efa-b9cc-8aa8d6b15f7e:
+            uuid: 26914487-4506-4efa-b9cc-8aa8d6b15f7e
+            region: content
+            configuration:
+              id: 'entity_field:node:field_dl_body'
+              label: Body
+              provider: ctools_block
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: text_summary_or_trimmed
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+                weight: 0
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 1
+          ce163d11-0242-4a93-920c-79c153512155:
+            uuid: ce163d11-0242-4a93-920c-79c153512155
+            region: content
+            configuration:
+              id: 'entity_field:node:field_dl_tags'
+              label: Tags
+              provider: ctools_block
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_label
+                settings:
+                  link: true
+                third_party_settings: {  }
+                weight: 0
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
             weight: 0
         third_party_settings: {  }
   panelizer:
@@ -40,6 +80,41 @@ third_party_settings:
     custom: false
     allow: false
     default: default
+  layout_builder_restrictions:
+    allowed_blocks: {  }
+    allowed_layouts:
+      - layout_onecol
+      - radix_bryant_flipped
+      - radix_bartlett_flipped
+      - radix_bartlett
+      - radix_boxton
+      - radix_brenham_flipped
+      - radix_brenham
+      - radix_brown
+      - radix_bryant
+      - radix_burr_flipped
+      - radix_burr
+      - radix_geary
+      - radix_harris
+      - radix_hewston_flipped
+      - radix_hewston
+      - radix_mccoppin
+      - radix_moscone_flipped
+      - radix_moscone
+      - radix_phelan
+      - radix_pond
+      - radix_rolph
+      - radix_sanderson_flipped
+      - radix_sanderson
+      - radix_selby_flipped
+      - radix_selby
+      - radix_sutro_double
+      - radix_sutro
+      - radix_taylor_flipped
+      - radix_taylor
+      - radix_webb_flipped
+      - radix_webb
+      - radix_whelan
 _core:
   default_config_hash: tFWUd0ANmUQ0Fgwds-X2U6Y-W8iLYqC90JIn6Ak-ceI
 id: node.dl_general_page.teaser

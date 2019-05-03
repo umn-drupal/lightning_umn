@@ -1,16 +1,14 @@
-uuid: b3655dd8-4197-4538-9a19-2a267953745c
+uuid: 7a00ca9e-7530-4ff7-8f27-70a3cf0cebe3
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - text
-_core:
-  default_config_hash: E8WfPg4btcd7SzK5Hztn0tnZ7yyzzEQ-nvfKrTNcjf8
 id: node.field_dl_biography
 field_name: field_dl_biography
 entity_type: node
-type: text_long
+type: text_with_summary
 settings: {  }
 module: text
 locked: false

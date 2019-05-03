@@ -81,12 +81,12 @@ third_party_settings:
               id: 'field_block:node:dl_biography:field_dl_portrait_image'
               label: 'Portrait Image'
               provider: layout_builder
-              label_display: visible
+              label_display: '0'
               formatter:
                 label: hidden
                 type: image
                 settings:
-                  image_style: medium
+                  image_style: large
                   image_link: ''
                 third_party_settings: {  }
               context_mapping:
@@ -141,23 +141,6 @@ third_party_settings:
                 type: string
             additional: {  }
             weight: 1
-          4e1fbc1f-ed5e-44d0-a3c9-3be96d88399a:
-            uuid: 4e1fbc1f-ed5e-44d0-a3c9-3be96d88399a
-            region: content
-            configuration:
-              id: 'field_block:node:dl_biography:field_dl_biography'
-              label: Biography
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: text_default
-                settings: {  }
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: 8
           ccbe24fc-0293-466b-8ca0-410329f592bf:
             uuid: ccbe24fc-0293-466b-8ca0-410329f592bf
             region: content
@@ -189,6 +172,21 @@ third_party_settings:
                 type: string
             additional: {  }
             weight: 2
+          dc117ad0-65cc-4ee3-9674-3a31223d752e:
+            uuid: dc117ad0-65cc-4ee3-9674-3a31223d752e
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:dl_biography:field_dl_biography'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 10
         third_party_settings: {  }
   layout_builder_restrictions:
     allowed_blocks:
@@ -223,7 +221,39 @@ third_party_settings:
         - system_breadcrumb_block
         - system_main_block
       'User fields': {  }
-    allowed_layouts: {  }
+    allowed_layouts:
+      - layout_onecol
+      - radix_bryant_flipped
+      - radix_bartlett_flipped
+      - radix_bartlett
+      - radix_boxton
+      - radix_brenham_flipped
+      - radix_brenham
+      - radix_brown
+      - radix_bryant
+      - radix_burr_flipped
+      - radix_burr
+      - radix_geary
+      - radix_harris
+      - radix_hewston_flipped
+      - radix_hewston
+      - radix_mccoppin
+      - radix_moscone_flipped
+      - radix_moscone
+      - radix_phelan
+      - radix_pond
+      - radix_rolph
+      - radix_sanderson_flipped
+      - radix_sanderson
+      - radix_selby_flipped
+      - radix_selby
+      - radix_sutro_double
+      - radix_sutro
+      - radix_taylor_flipped
+      - radix_taylor
+      - radix_webb_flipped
+      - radix_webb
+      - radix_whelan
   panelizer:
     enable: false
     custom: false
@@ -237,7 +267,7 @@ bundle: dl_biography
 mode: default
 content:
   field_dl_biography:
-    weight: 102
+    weight: 111
     label: above
     settings: {  }
     third_party_settings: {  }

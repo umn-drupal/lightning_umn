@@ -1,4 +1,4 @@
-uuid: 0db4f5c9-4bab-419c-87e8-f0b335423333
+uuid: f37071f2-8648-49e4-96b3-4ec990815f6a
 langcode: en
 status: true
 dependencies:
@@ -7,8 +7,6 @@ dependencies:
     - node.type.dl_biography
   module:
     - text
-_core:
-  default_config_hash: _qIJnYOp6C5Ci-smIfOzzQuZwlKhMf48pSBkBDteDLU
 id: node.dl_biography.field_dl_biography
 field_name: field_dl_biography
 entity_type: node
@@ -19,5 +17,6 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: text_long
+settings:
+  display_summary: false
+field_type: text_with_summary
