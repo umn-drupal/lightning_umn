@@ -1,5 +1,8 @@
 <?php
 
+use Drupal\user\RoleInterface;
+use Drupal\user\Entity\Role;
+
 /**
  * @file
  * Install, update and uninstall hooks for the Lightning Extender subprofile.
@@ -8,36 +11,37 @@
 /**
  * Implements hook_install().
  */
-function lightning_umn_install()
-{
-    // Add code here perform additional site information tasks, generate sample
-    // content, etc.
-    \Drupal::service('theme_handler')->setDefault('folwell');
+function lightning_umn_install() {
+  // Add code here perform additional site information tasks, generate sample
+  // content, etc.
+  \Drupal::service('theme_handler')->setDefault('folwell');
 
-    // Honeypot permission
-    $authenticated_rid  = \Drupal\user\RoleInterface::AUTHENTICATED_ID;
-    $authenticated_role = \Drupal\user\Entity\Role::load($authenticated_rid);
-    $authenticated_role->grantPermission("bypass honeypot protection");
-    $authenticated_role->save();
+  // Honeypot permission.
+  $authenticated_rid = RoleInterface::AUTHENTICATED_ID;
+  $authenticated_role = Role::load($authenticated_rid);
+  $authenticated_role->grantPermission("bypass honeypot protection");
+  $authenticated_role->save();
 }
 
-function lightning_umn_site_install_finished($install_state)
-{
-    // Auto Entity Label config is not saving as part of config/optional, delegating
-    // it to post install hook.
-    $config_factory = Drupal::configFactory();
-    $entitylabel_config = $config_factory->getEditable('auto_entitylabel.settings.node.dl_biography');
-    $biography_entitylabel_config = [
-        'status' => 1,
-        'pattern' => '[node:field_dl_first_name:value] [node:field_dl_last_name:value]',
-        'php' => FALSE,
-        'escape' => FALSE,
-        'dependencies' => [
-            'config' => [
-                'node.type.dl_biography',
-            ],
-        ],
-    ];
-    $entitylabel_config->setData($biography_entitylabel_config);
-    $entitylabel_config->save();
+/**
+ * Post-install hook.
+ */
+function lightning_umn_site_install_finished($install_state) {
+  // Auto Entity Label config is not saving as part of config/optional,
+  // delegating it to post install hook.
+  $config_factory = Drupal::configFactory();
+  $entitylabel_config = $config_factory->getEditable('auto_entitylabel.settings.node.dl_biography');
+  $biography_entitylabel_config = [
+    'status' => 1,
+    'pattern' => '[node:field_dl_first_name:value] [node:field_dl_last_name:value]',
+    'php' => false,
+    'escape' => false,
+    'dependencies' => [
+      'config' => [
+        'node.type.dl_biography',
+      ],
+    ],
+  ];
+  $entitylabel_config->setData($biography_entitylabel_config);
+  $entitylabel_config->save();
 }

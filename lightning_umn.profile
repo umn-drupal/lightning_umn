@@ -1,40 +1,44 @@
 <?php
-use Drupal\Core\Form\FormStateInterface;
 
 /**
  * @file
  * Enables modules and site configuration for the Lightning Extender profile.
  */
 
-// Add any custom code here, like hook implementations.
-function lightning_umn_form_install_configure_form_alter(&$form, FormStateInterface $form_state)
-{
-    // Account information defaults
-    $form['admin_account']['account']['name']['#default_value'] = 'oitadmin';
-    $form['admin_account']['account']['mail']['#default_value'] = 'ucm@umn.edu';
+use Drupal\Core\Form\FormStateInterface;
 
-    // Date/time settings
-    $form['regional_settings']['site_default_country']['#default_value'] = 'US';
-    $form['regional_settings']['date_default_timezone']['#default_value'] = 'America/Chicago';
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function lightning_umn_form_install_configure_form_alter(&$form, FormStateInterface $form_state) {
+  // Account information defaults.
+  $form['admin_account']['account']['name']['#default_value'] = 'oitadmin';
+  $form['admin_account']['account']['mail']['#default_value'] = 'ucm@umn.edu';
 
-    // Turn off automatic update
-    $form['update_notifications']['enable_update_status_module']['#default_value'] = 0;
+  // Date/time settings.
+  $form['regional_settings']['site_default_country']['#default_value'] = 'US';
+  $form['regional_settings']['date_default_timezone']['#default_value'] = 'America/Chicago';
 
-    // Hide admin password field
-    $form['admin_account']['account']['pass']['#type'] = 'hidden';
-    $form['admin_account']['account']['pass']['#default_value'] = user_password(25);
+  // Turn off automatic update.
+  $form['update_notifications']['enable_update_status_module']['#default_value'] = 0;
+
+  // Hide admin password field.
+  $form['admin_account']['account']['pass']['#type'] = 'hidden';
+  $form['admin_account']['account']['pass']['#default_value'] = user_password(25);
 }
 
-function lightning_umn_form_user_login_form_alter(&$form, FormStateInterface $form_state, $form_id)
-{
-    if (!empty($form['simplesamlphp_auth_login_link'])) {
-        $allowed_users = \Drupal::config('simplesamlphp_auth.settings')->get('allow');
-        if (!$allowed_users['default_login'] || $allowed_users['default_login_users'] === '1') {
-            $form['#prefix'] = t('<div class="status-messages"><div class="warning">Drupal username/password login is disabled. Please use the button below to log in with your University of Minnesota account.</div></div>');
-            $form['simplesamlphp_auth_login_link']['#weight'] = -1;
-            $form['name']['#attributes']['disabled'] = 'true';
-            $form['pass']['#attributes']['disabled'] = 'true';
-            $form['actions']['submit']['#attributes'] = ['disabled' => 'true'];
-        }
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function lightning_umn_form_user_login_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (!empty($form['simplesamlphp_auth_login_link'])) {
+    $allowed_users = \Drupal::config('simplesamlphp_auth.settings')->get('allow');
+    if (!$allowed_users['default_login'] || $allowed_users['default_login_users'] === '1') {
+      $form['#prefix'] = t('<div class="status-messages"><div class="warning">Drupal username/password login is disabled. Please use the button below to log in with your University of Minnesota account.</div></div>');
+      $form['simplesamlphp_auth_login_link']['#weight'] = -1;
+      $form['name']['#attributes']['disabled'] = 'true';
+      $form['pass']['#attributes']['disabled'] = 'true';
+      $form['actions']['submit']['#attributes'] = ['disabled' => 'true'];
     }
+  }
 }
