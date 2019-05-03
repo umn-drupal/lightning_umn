@@ -6,8 +6,6 @@ dependencies:
     - node.type.dl_biography
   module:
     - telephone
-_core:
-  default_config_hash: ZxMKI2HQYuq_JTmSEyquJbwpvT_SK0YfXHmR3Ea-mr4
 id: node.dl_biography.field_dl_telephone_number
 field_name: field_dl_telephone_number
 entity_type: node

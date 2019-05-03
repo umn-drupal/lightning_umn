@@ -120,8 +120,6 @@ third_party_settings:
       - radix_webb_flipped
       - radix_webb
       - radix_whelan
-_core:
-  default_config_hash: FL-yMepnAOrF-sfyIf6KG-HpwMxSGRB5snVYVrclgRw
 id: node.dl_biography.teaser
 targetEntityType: node
 bundle: dl_biography

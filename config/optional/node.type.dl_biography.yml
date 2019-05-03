@@ -8,8 +8,6 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-_core:
-  default_config_hash: sTOl5XzyzV11yaT8xneJ666ebioqRU2m9KbmD-XZasw
 name: Biography
 type: dl_biography
 description: ''

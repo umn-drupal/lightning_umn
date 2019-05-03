@@ -5,8 +5,6 @@ dependencies:
     - user.role.dl_access_manager
   module:
     - user
-_core:
-  default_config_hash: MG61V8N8D2BKiibs_lndsOzPDPB9BCEo-KpG_sQg3zA
 id: user_remove_role_action.dl_access_manager
 label: 'Remove the Access Manager role from the selected user(s)'
 type: user

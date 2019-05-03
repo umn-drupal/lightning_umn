@@ -258,8 +258,6 @@ third_party_settings:
     custom: false
     allow: false
     default: default
-_core:
-  default_config_hash: xZgxTOYIQ4MVggPTnHcsiy9kQ1350poNffSuuHN0hsA
 id: node.dl_biography.default
 targetEntityType: node
 bundle: dl_biography

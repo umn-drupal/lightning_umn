@@ -9,8 +9,6 @@ dependencies:
     - media.type.tweet
     - media.type.video
     - node.type.dl_general_page
-_core:
-  default_config_hash: a_MebEsv-dp0K94A2dsib3HvgN9njzsatGLhRTcN-W4
 id: node.dl_general_page.field_dl_media
 field_name: field_dl_media
 entity_type: node

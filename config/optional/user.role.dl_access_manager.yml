@@ -4,10 +4,6 @@ dependencies:
   module:
     - lightning_core
 third_party_settings:
-  lightning_core:
-    description: ''
-_core:
-  default_config_hash: 8DjCrX5l6xsVcUDNV-0APQ2VYUclPzja3yZ7_UmohOM
 id: dl_access_manager
 label: 'Access Manager'
 weight: 16

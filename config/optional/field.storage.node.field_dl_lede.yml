@@ -4,8 +4,6 @@ dependencies:
   module:
     - node
     - text
-_core:
-  default_config_hash: DmdlZd17v3-OWZrTwDsxKRQYw-5YFIBXmpQUMrIsKjE
 id: node.field_dl_lede
 field_name: field_dl_lede
 entity_type: node

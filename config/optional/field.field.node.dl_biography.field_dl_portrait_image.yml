@@ -6,8 +6,6 @@ dependencies:
     - node.type.dl_biography
   module:
     - image
-_core:
-  default_config_hash: O1EPYj2oqhkau2Di310_JgPnqm4f2UNGmsD05647yIA
 id: node.dl_biography.field_dl_portrait_image
 field_name: field_dl_portrait_image
 entity_type: node

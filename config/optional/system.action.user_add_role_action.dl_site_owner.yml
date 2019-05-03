@@ -5,8 +5,6 @@ dependencies:
     - user.role.dl_site_owner
   module:
     - user
-_core:
-  default_config_hash: cdKK1HngHRN3sB9QKvSfVZCnFLTo66xPyLoiaVmMaEc
 id: user_add_role_action.dl_site_owner
 label: 'Add the Site owner role to the selected user(s)'
 type: user

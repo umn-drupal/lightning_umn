@@ -5,8 +5,6 @@ dependencies:
     - user.role.dl_advanced_site_builder
   module:
     - user
-_core:
-  default_config_hash: a0IXIg8HXA0Ru_LhgI-dM9zZq6OjYmwTeyRZtSFRAqs
 id: user_remove_role_action.dl_advanced_site_builder
 label: 'Remove the Advanced site builder role from the selected user(s)'
 type: user

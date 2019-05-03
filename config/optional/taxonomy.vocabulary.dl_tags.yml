@@ -1,8 +1,6 @@
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: NgfqPAZsgV8A1vdEXO1-5P7uD3bGeW2hUpS8vZ9LY2c
 name: Tags
 vid: dl_tags
 description: ''

@@ -13,8 +13,6 @@ dependencies:
     - entity_browser
     - path
     - text
-_core:
-  default_config_hash: chPNgwXoKfVrqbgnNlliA4snYD-_6xBwuL75nMwF1F0
 id: node.dl_news_blog.default
 targetEntityType: node
 bundle: dl_news_blog

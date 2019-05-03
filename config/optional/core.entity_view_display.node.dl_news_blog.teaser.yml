@@ -105,8 +105,6 @@ third_party_settings:
       - radix_webb_flipped
       - radix_webb
       - radix_whelan
-_core:
-  default_config_hash: HY5ImG_dAry1oko1tC-ufkglsCTq__0sK30OoiUZBlg
 id: node.dl_news_blog.teaser
 targetEntityType: node
 bundle: dl_news_blog

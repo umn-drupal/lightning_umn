@@ -5,8 +5,6 @@ dependencies:
     - field.storage.node.field_dl_tags
     - node.type.dl_biography
     - taxonomy.vocabulary.dl_tags
-_core:
-  default_config_hash: WbJBn4anAKecnxPVM4Z2rvlN0cwSD_p5PDX6Tw9a_IU
 id: node.dl_biography.field_dl_tags
 field_name: field_dl_tags
 entity_type: node

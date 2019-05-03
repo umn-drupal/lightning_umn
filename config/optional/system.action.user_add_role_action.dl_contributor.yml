@@ -5,8 +5,6 @@ dependencies:
     - user.role.dl_contributor
   module:
     - user
-_core:
-  default_config_hash: pTRH-pBFUP7eYcpyY-J_vMlVzIjEyzHFH2fyUWjBrTc
 id: user_add_role_action.dl_contributor
 label: 'Add the Contributor role to the selected user(s)'
 type: user

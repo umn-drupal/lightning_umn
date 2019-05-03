@@ -10,8 +10,6 @@ dependencies:
     - image
     - node
     - user
-_core:
-  default_config_hash: NRRkrnximmer9jWBfaA22TBCv7TpdJN6MsGxML1r3A0
 id: dl_biographies
 label: Biographies
 module: views
