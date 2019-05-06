@@ -59,3 +59,4 @@ exclude:
   - lightning_workflow
   - lightning_preview
   - lightning_search
+  - lightning_media_slideshow
