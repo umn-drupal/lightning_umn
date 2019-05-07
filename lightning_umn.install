@@ -2,7 +2,7 @@
 
 use Drupal\user\RoleInterface;
 use Drupal\user\Entity\Role;
-
+use Drupal\lightning_umn\Form\InstallConfigurationForm;
 /**
  * @file
  * Install, update and uninstall hooks for the Lightning Extender subprofile.
@@ -51,6 +51,7 @@ function lightning_umn_install_tasks(&$install_state) {
     'lightning_umn_install_form' => [
       'display_name' => t('Install Configuration Options'),
       'type' => 'form',
+      'function' => InstallConfigurationForm::class
     ]
   ];
 
