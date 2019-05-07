@@ -1,3 +1,4 @@
+uuid: 9d5900e8-2610-4fac-9ea2-598eab038910
 langcode: en
 status: true
 dependencies:
@@ -15,6 +16,8 @@ dependencies:
     - paragraphs.paragraphs_type.fs_slide
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: KuhuiDdP5Wlwk3WON5G_fPF7Pzhw74Ck-Icrw5mbxs8
 id: node.dl_biography.field_dl_paragraphs
 field_name: field_dl_paragraphs
 entity_type: node

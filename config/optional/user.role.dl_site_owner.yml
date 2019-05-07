@@ -1,9 +1,14 @@
+uuid: b9368cfb-a94a-4387-8a06-9031eaaeeea2
 langcode: en
 status: true
 dependencies:
   module:
     - lightning_core
 third_party_settings:
+  lightning_core:
+    description: ''
+_core:
+  default_config_hash: tSTAevPb0ZcHgaadKDO8T4koeFvi-MvPSDktPONDvRU
 id: dl_site_owner
 label: 'Site owner'
 weight: 17
@@ -14,6 +19,7 @@ permissions:
   - 'administer media'
   - 'administer nodes'
   - 'administer robots.txt'
+  - 'administer site configuration'
   - 'delete all revisions'
   - 'delete any dl_biography content'
   - 'delete any dl_general_page content'

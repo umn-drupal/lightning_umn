@@ -1,3 +1,4 @@
+uuid: 441de9d8-9528-4c89-8f2a-52ea8a37fb75
 langcode: en
 status: true
 dependencies:
@@ -129,6 +130,7 @@ third_party_settings:
         third_party_settings: {  }
   layout_builder_restrictions:
     allowed_blocks:
+      'Chaos tools': {  }
       Content:
         - 'entity_field:node:uid'
         - 'entity_field:node:created'
@@ -140,23 +142,19 @@ third_party_settings:
       'Content fields': {  }
       core:
         - page_title_block
+      'Entity Block': {  }
       Forms: {  }
       Help: {  }
-      'Lists (Views)':
-        - 'views_block:dl_biographies-block_1'
-        - 'views_block:dl_general_page-block_1'
-        - 'views_block:dl_news_blog-block_1'
-      Menus:
-        - 'menu_block:main'
-        - 'system_menu_block:main'
+      'Lists (Views)': {  }
+      Menus: {  }
       'Moderation Dashboard': {  }
       'Responsive menu': {  }
       'SimpleSAMLphp Authentication': {  }
       Superfish: {  }
       System:
         - system_breadcrumb_block
-        - system_main_block
       'UMN Search Form Configuration': {  }
+      User: {  }
       'User fields': {  }
     allowed_layouts:
       - layout_onecol
@@ -196,6 +194,8 @@ third_party_settings:
     custom: false
     allow: false
     default: default
+_core:
+  default_config_hash: 9FLXlrKmtEZr_VDds66SgChbH7bqmqURA48oOPCE9-4
 id: node.dl_news_blog.default
 targetEntityType: node
 bundle: dl_news_blog

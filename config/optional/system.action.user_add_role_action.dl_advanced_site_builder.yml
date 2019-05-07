@@ -1,3 +1,4 @@
+uuid: 4e644b7a-0459-467b-9976-2ba8c11cf85e
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - user.role.dl_advanced_site_builder
   module:
     - user
+_core:
+  default_config_hash: F6f_A0Mxj3mY1g6kMjYzmfPzHTNChEe56Ue_kKsTZLk
 id: user_add_role_action.dl_advanced_site_builder
 label: 'Add the Advanced site builder role to the selected user(s)'
 type: user

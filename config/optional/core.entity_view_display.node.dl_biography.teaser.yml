@@ -1,3 +1,4 @@
+uuid: bb4dfda5-1bbf-4dee-a9ea-bca98160855a
 langcode: en
 status: true
 dependencies:
@@ -86,7 +87,35 @@ third_party_settings:
     allow: false
     default: default
   layout_builder_restrictions:
-    allowed_blocks: {  }
+    allowed_blocks:
+      'Chaos tools': {  }
+      Content:
+        - 'entity_field:node:field_dl_biography'
+        - 'entity_field:node:field_dl_email_address'
+        - 'entity_field:node:field_dl_first_name'
+        - 'entity_field:node:field_dl_last_name'
+        - 'entity_field:node:field_dl_paragraphs'
+        - 'entity_field:node:field_dl_portrait_image'
+        - 'entity_field:node:field_dl_suffix'
+        - 'entity_field:node:field_dl_tags'
+        - 'entity_field:node:field_dl_telephone_number'
+        - 'entity_field:node:title'
+      'Content fields': {  }
+      core: {  }
+      'Entity Block': {  }
+      Forms: {  }
+      Help: {  }
+      'Lists (Views)': {  }
+      Menus: {  }
+      'Moderation Dashboard': {  }
+      'Responsive menu': {  }
+      'SimpleSAMLphp Authentication': {  }
+      Superfish: {  }
+      System:
+        - system_breadcrumb_block
+      'UMN Search Form Configuration': {  }
+      User: {  }
+      'User fields': {  }
     allowed_layouts:
       - layout_onecol
       - radix_bryant_flipped
@@ -120,6 +149,8 @@ third_party_settings:
       - radix_webb_flipped
       - radix_webb
       - radix_whelan
+_core:
+  default_config_hash: FL-yMepnAOrF-sfyIf6KG-HpwMxSGRB5snVYVrclgRw
 id: node.dl_biography.teaser
 targetEntityType: node
 bundle: dl_biography

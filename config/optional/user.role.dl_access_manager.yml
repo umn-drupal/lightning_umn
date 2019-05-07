@@ -1,9 +1,14 @@
+uuid: dcc41c92-ce05-44dc-8fc6-ae45301769b5
 langcode: en
 status: true
 dependencies:
   module:
     - lightning_core
 third_party_settings:
+  lightning_core:
+    description: ''
+_core:
+  default_config_hash: 8DjCrX5l6xsVcUDNV-0APQ2VYUclPzja3yZ7_UmohOM
 id: dl_access_manager
 label: 'Access Manager'
 weight: 16

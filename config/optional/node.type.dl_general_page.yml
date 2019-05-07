@@ -1,3 +1,4 @@
+uuid: 015c59dc-af59-4ff0-89ea-cdf2c0e95b74
 langcode: en
 status: true
 dependencies:
@@ -8,6 +9,8 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
+_core:
+  default_config_hash: dPpjESLOF8TOnts2nhE6nV8ZCPqvXzzk2hwWNumx-gM
 name: 'General Page'
 type: dl_general_page
 description: ''

@@ -1,3 +1,4 @@
+uuid: 8bee3f71-fdea-4085-a2d0-76b424a1d162
 langcode: en
 status: true
 dependencies:
@@ -71,7 +72,30 @@ third_party_settings:
     allow: false
     default: default
   layout_builder_restrictions:
-    allowed_blocks: {  }
+    allowed_blocks:
+      'Chaos tools': {  }
+      Content:
+        - 'entity_field:node:uid'
+        - 'entity_field:node:created'
+        - 'entity_field:node:field_dl_body'
+        - 'entity_field:node:field_dl_lede'
+        - 'entity_field:node:title'
+      'Content fields': {  }
+      core:
+        - page_title_block
+      'Entity Block': {  }
+      Forms: {  }
+      Help: {  }
+      Menus: {  }
+      'Moderation Dashboard': {  }
+      'Responsive menu': {  }
+      'SimpleSAMLphp Authentication': {  }
+      Superfish: {  }
+      System:
+        - system_breadcrumb_block
+      'UMN Search Form Configuration': {  }
+      User: {  }
+      'User fields': {  }
     allowed_layouts:
       - layout_onecol
       - radix_bryant_flipped
@@ -105,6 +129,8 @@ third_party_settings:
       - radix_webb_flipped
       - radix_webb
       - radix_whelan
+_core:
+  default_config_hash: HY5ImG_dAry1oko1tC-ufkglsCTq__0sK30OoiUZBlg
 id: node.dl_news_blog.teaser
 targetEntityType: node
 bundle: dl_news_blog

@@ -1,3 +1,4 @@
+uuid: 2b0bff66-852a-42f1-b1d3-5bece3bfd711
 langcode: en
 status: true
 dependencies:
@@ -189,6 +190,7 @@ third_party_settings:
         third_party_settings: {  }
   layout_builder_restrictions:
     allowed_blocks:
+      'Chaos tools': {  }
       Content:
         - 'entity_field:node:field_dl_biography'
         - 'entity_field:node:field_dl_email_address'
@@ -201,24 +203,22 @@ third_party_settings:
         - 'entity_field:node:field_dl_tags'
         - 'entity_field:node:field_dl_telephone_number'
         - 'entity_field:node:title'
+      'Content fields': {  }
       core:
         - page_title_block
+      'Entity Block': {  }
       Forms: {  }
       Help: {  }
-      'Lists (Views)':
-        - 'views_block:dl_biographies-block_1'
-        - 'views_block:dl_general_page-block_1'
-        - 'views_block:dl_news_blog-block_1'
-      Menus:
-        - 'system_menu_block:main'
-        - 'menu_block:main'
+      'Lists (Views)': {  }
+      Menus: {  }
       'Moderation Dashboard': {  }
       'Responsive menu': {  }
       'SimpleSAMLphp Authentication': {  }
       Superfish: {  }
       System:
         - system_breadcrumb_block
-        - system_main_block
+      'UMN Search Form Configuration': {  }
+      User: {  }
       'User fields': {  }
     allowed_layouts:
       - layout_onecol
@@ -258,6 +258,8 @@ third_party_settings:
     custom: false
     allow: false
     default: default
+_core:
+  default_config_hash: xZgxTOYIQ4MVggPTnHcsiy9kQ1350poNffSuuHN0hsA
 id: node.dl_biography.default
 targetEntityType: node
 bundle: dl_biography

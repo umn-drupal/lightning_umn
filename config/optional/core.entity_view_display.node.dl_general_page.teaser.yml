@@ -1,3 +1,4 @@
+uuid: 4f1a8c97-fd29-422b-8f42-202cc9939bce
 langcode: en
 status: true
 dependencies:
@@ -80,7 +81,33 @@ third_party_settings:
     allow: false
     default: default
   layout_builder_restrictions:
-    allowed_blocks: {  }
+    allowed_blocks:
+      'Chaos tools': {  }
+      Content:
+        - 'entity_field:node:field_dl_body'
+        - 'entity_field:node:field_dl_media'
+        - 'entity_field:node:field_dl_paragraphs'
+        - 'entity_field:node:field_dl_tags'
+        - 'entity_field:node:title'
+      'Content fields': {  }
+      core:
+        - page_title_block
+      'Entity Block': {  }
+      Help: {  }
+      'Lists (Views)':
+        - 'views_block:dl_biographies-block_1'
+        - 'views_block:dl_general_page-block_1'
+        - 'views_block:dl_news_blog-block_1'
+      Menus: {  }
+      'Moderation Dashboard': {  }
+      'Responsive menu': {  }
+      'SimpleSAMLphp Authentication': {  }
+      Superfish: {  }
+      System:
+        - system_breadcrumb_block
+      'UMN Search Form Configuration': {  }
+      User: {  }
+      'User fields': {  }
     allowed_layouts:
       - layout_onecol
       - radix_bryant_flipped
@@ -114,6 +141,8 @@ third_party_settings:
       - radix_webb_flipped
       - radix_webb
       - radix_whelan
+_core:
+  default_config_hash: tFWUd0ANmUQ0Fgwds-X2U6Y-W8iLYqC90JIn6Ak-ceI
 id: node.dl_general_page.teaser
 targetEntityType: node
 bundle: dl_general_page

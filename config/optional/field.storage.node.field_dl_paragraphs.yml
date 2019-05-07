@@ -1,3 +1,4 @@
+uuid: 9d782902-c984-44cc-ac95-7ffabeda7a5b
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - entity_reference_revisions
     - node
     - paragraphs
+_core:
+  default_config_hash: A7ZyQaBHPLazFseSL3ZgIBu_x5zQ6zbR1YlajCw3WnM
 id: node.field_dl_paragraphs
 field_name: field_dl_paragraphs
 entity_type: node

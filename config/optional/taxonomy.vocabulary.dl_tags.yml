@@ -1,6 +1,9 @@
+uuid: df4b0209-3a0c-40dc-b81c-5eff47632e88
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: NgfqPAZsgV8A1vdEXO1-5P7uD3bGeW2hUpS8vZ9LY2c
 name: Tags
 vid: dl_tags
 description: ''

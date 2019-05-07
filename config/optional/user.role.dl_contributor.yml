@@ -1,9 +1,14 @@
+uuid: 18833056-c4ca-4000-bb02-d4badce0eade
 langcode: en
 status: true
 dependencies:
   module:
     - lightning_core
 third_party_settings:
+  lightning_core:
+    description: ''
+_core:
+  default_config_hash: azWbA_tplpzdg0GeJOoxm1uZriHZ0ooxYRjwEFnEARw
 id: dl_contributor
 label: Contributor
 weight: 13
@@ -11,6 +16,7 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access content overview'
+  - 'access contextual links'
   - 'access files overview'
   - 'access image_browser entity browser pages'
   - 'access media overview'
@@ -18,6 +24,13 @@ permissions:
   - 'access shortcuts'
   - 'access toolbar'
   - 'administer menu'
+  - 'configure all dl_biography node layout overrides'
+  - 'configure all dl_general_page node layout overrides'
+  - 'configure all dl_news_blog node layout overrides'
+  - 'configure editable dl_biography node layout overrides'
+  - 'configure editable dl_general_page node layout overrides'
+  - 'configure editable dl_news_blog node layout overrides'
+  - 'create and edit custom blocks'
   - 'create dl_biography content'
   - 'create dl_general_page content'
   - 'create dl_news_blog content'

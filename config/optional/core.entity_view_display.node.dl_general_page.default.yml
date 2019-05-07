@@ -1,3 +1,4 @@
+uuid: 80aa34ce-1f0a-403c-99ae-db1c4210c857
 langcode: en
 status: true
 dependencies:
@@ -98,8 +99,8 @@ third_party_settings:
     default: default
   layout_builder_restrictions:
     allowed_blocks:
+      'Chaos tools': {  }
       Content:
-        - 'entity_field:node:field_dl_biography'
         - 'entity_field:node:field_dl_body'
         - 'entity_field:node:field_dl_media'
         - 'entity_field:node:field_dl_paragraphs'
@@ -108,22 +109,22 @@ third_party_settings:
       'Content fields': {  }
       core:
         - page_title_block
+      'Entity Block': {  }
       Forms: {  }
       Help: {  }
       'Lists (Views)':
         - 'views_block:dl_biographies-block_1'
         - 'views_block:dl_general_page-block_1'
         - 'views_block:dl_news_blog-block_1'
-      Menus:
-        - 'menu_block:main'
-        - 'system_menu_block:main'
+      Menus: {  }
       'Moderation Dashboard': {  }
       'Responsive menu': {  }
       'SimpleSAMLphp Authentication': {  }
       Superfish: {  }
       System:
         - system_breadcrumb_block
-        - system_main_block
+      'UMN Search Form Configuration': {  }
+      User: {  }
       'User fields': {  }
     allowed_layouts:
       - layout_onecol

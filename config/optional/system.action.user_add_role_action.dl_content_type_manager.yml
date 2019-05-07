@@ -1,3 +1,4 @@
+uuid: a49ddaf5-145e-4a32-9afc-13d0ff91055c
 langcode: en
 status: true
 dependencies:
@@ -5,6 +6,8 @@ dependencies:
     - user.role.dl_content_type_manager
   module:
     - user
+_core:
+  default_config_hash: YniMoQH7vLGQxj27xCyTItECymGi2j9aQ06vlKbI6aI
 id: user_add_role_action.dl_content_type_manager
 label: 'Add the Content type manager role to the selected user(s)'
 type: user

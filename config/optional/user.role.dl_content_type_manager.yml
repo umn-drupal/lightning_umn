@@ -1,9 +1,14 @@
+uuid: 9dcc4716-db91-427e-9f27-ba1aa9fbf94f
 langcode: en
 status: true
 dependencies:
   module:
     - lightning_core
 third_party_settings:
+  lightning_core:
+    description: ''
+_core:
+  default_config_hash: PDPeSEKUMsaINYLtCpxrBSsS5d5764xVMoNJSnZZRuk
 id: dl_content_type_manager
 label: 'Content type manager'
 weight: 14

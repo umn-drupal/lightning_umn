@@ -1,3 +1,4 @@
+uuid: 95500e38-6a64-4ef6-98e0-5b4fa6577cbc
 langcode: en
 status: true
 dependencies:
@@ -322,6 +323,7 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+      block_category: 'Drupal Lite - Lists (Views)'
     cache_metadata:
       max-age: -1
       contexts:

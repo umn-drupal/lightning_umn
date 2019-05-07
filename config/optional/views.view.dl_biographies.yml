@@ -1,3 +1,4 @@
+uuid: 8624b1b4-eb79-4837-86d4-3815cdad5188
 langcode: en
 status: true
 dependencies:
@@ -10,6 +11,8 @@ dependencies:
     - image
     - node
     - user
+_core:
+  default_config_hash: NRRkrnximmer9jWBfaA22TBCv7TpdJN6MsGxML1r3A0
 id: dl_biographies
 label: Biographies
 module: views
@@ -325,6 +328,7 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+      block_category: 'Drupal Lite - Lists (Views)'
     cache_metadata:
       max-age: -1
       contexts:
