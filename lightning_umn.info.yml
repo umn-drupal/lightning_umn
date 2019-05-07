@@ -30,7 +30,6 @@ install:
   - slick_video
   - fpa
   - admin_toolbar_links_access_filter
-  - roleassign
   - acquia_connector
   - simplesamlphp_auth
   - memcache
@@ -45,7 +44,6 @@ install:
   - responsive_menu
   - menu_block
   - folwell_blocks
-  - auto_entitylabel
 
 themes:
   - folwell

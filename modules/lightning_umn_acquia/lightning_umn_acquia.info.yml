@@ -1,0 +1,10 @@
+name: Lightning UMN Acquia Environment
+description: Install Acquia Specific configurations
+core: 8.x
+package: UMN
+type: module
+dependencies:
+    - acquia_connector
+    - simplesamlphp_auth
+    - memcache
+    - acquia_purge
