@@ -1,4 +1,3 @@
-uuid: 736362cf-bc63-4da5-85ae-d2f5c53be1c6
 langcode: en
 status: true
 dependencies:
@@ -6,8 +5,6 @@ dependencies:
     - user.role.dl_site_owner
   module:
     - user
-_core:
-  default_config_hash: cdKK1HngHRN3sB9QKvSfVZCnFLTo66xPyLoiaVmMaEc
 id: user_add_role_action.dl_site_owner
 label: 'Add the Site owner role to the selected user(s)'
 type: user

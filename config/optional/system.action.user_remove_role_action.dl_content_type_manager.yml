@@ -1,4 +1,3 @@
-uuid: 2977587c-e308-42fb-b1c5-94c5a3a6ab8e
 langcode: en
 status: true
 dependencies:
@@ -6,8 +5,6 @@ dependencies:
     - user.role.dl_content_type_manager
   module:
     - user
-_core:
-  default_config_hash: UeiZ5lmCtIj_ucerXvxKGV8TEnBRoefgqNSKHVDpvyw
 id: user_remove_role_action.dl_content_type_manager
 label: 'Remove the Content type manager role from the selected user(s)'
 type: user

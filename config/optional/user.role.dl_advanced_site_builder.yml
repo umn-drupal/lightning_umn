@@ -4,8 +4,6 @@ dependencies:
   module:
     - lightning_core
 third_party_settings:
-  lightning_core:
-    description: ''
 id: dl_advanced_site_builder
 label: 'Advanced site builder'
 weight: 15

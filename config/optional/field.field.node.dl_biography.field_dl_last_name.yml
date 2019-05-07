@@ -1,12 +1,9 @@
-uuid: bc68d411-2c3c-4c9b-92c7-bbdc11d52957
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_dl_last_name
     - node.type.dl_biography
-_core:
-  default_config_hash: iyUmJqtng4EH3UHxj_0Tc6YmG6hGyqRQ5m5u7RrHzxE
 id: node.dl_biography.field_dl_last_name
 field_name: field_dl_last_name
 entity_type: node

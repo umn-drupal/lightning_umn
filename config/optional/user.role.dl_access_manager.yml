@@ -4,8 +4,6 @@ dependencies:
   module:
     - lightning_core
 third_party_settings:
-  lightning_core:
-    description: ''
 id: dl_access_manager
 label: 'Access Manager'
 weight: 16

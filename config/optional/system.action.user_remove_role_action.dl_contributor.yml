@@ -1,4 +1,3 @@
-uuid: 40d9a070-b134-43ab-b678-a0c47399ba86
 langcode: en
 status: true
 dependencies:
@@ -6,8 +5,6 @@ dependencies:
     - user.role.dl_contributor
   module:
     - user
-_core:
-  default_config_hash: NeZSZlzs6pa5mQuFEX_bn85mUgfFEkkIukmP-TRXi6Y
 id: user_remove_role_action.dl_contributor
 label: 'Remove the Contributor role from the selected user(s)'
 type: user

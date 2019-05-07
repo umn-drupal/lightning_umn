@@ -4,8 +4,6 @@ dependencies:
   module:
     - lightning_core
 third_party_settings:
-  lightning_core:
-    description: ''
 id: dl_content_type_manager
 label: 'Content type manager'
 weight: 14

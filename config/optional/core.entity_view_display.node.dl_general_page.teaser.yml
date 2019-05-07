@@ -1,4 +1,3 @@
-uuid: 4f1a8c97-fd29-422b-8f42-202cc9939bce
 langcode: en
 status: true
 dependencies:
@@ -141,8 +140,6 @@ third_party_settings:
       - radix_webb_flipped
       - radix_webb
       - radix_whelan
-_core:
-  default_config_hash: tFWUd0ANmUQ0Fgwds-X2U6Y-W8iLYqC90JIn6Ak-ceI
 id: node.dl_general_page.teaser
 targetEntityType: node
 bundle: dl_general_page

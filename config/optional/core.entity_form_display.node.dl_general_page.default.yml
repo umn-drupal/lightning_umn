@@ -1,4 +1,3 @@
-uuid: 5417500e-3427-470a-8631-226c04218ac6
 langcode: en
 status: true
 dependencies:
@@ -15,8 +14,6 @@ dependencies:
     - paragraphs
     - path
     - text
-_core:
-  default_config_hash: HfCXemAWxA45FlQNc-l46rvzprGtPOi6gMVMM0aIghE
 id: node.dl_general_page.default
 targetEntityType: node
 bundle: dl_general_page

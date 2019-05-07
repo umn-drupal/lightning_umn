@@ -1,4 +1,3 @@
-uuid: ccbbbd78-66d7-4e54-b434-26baeb7b5255
 langcode: en
 status: true
 dependencies:
@@ -10,8 +9,6 @@ dependencies:
     - node
     - text
     - user
-_core:
-  default_config_hash: UaUBdZwTBof5qBn_lSKbyRhhaco-mJi1Pr_wp8ZtnBk
 id: dl_news_blog
 label: 'News / Blog'
 module: views

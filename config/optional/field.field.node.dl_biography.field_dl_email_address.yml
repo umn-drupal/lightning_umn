@@ -1,12 +1,9 @@
-uuid: d589ac9c-6b06-4205-8021-781f4b4e63b2
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_dl_email_address
     - node.type.dl_biography
-_core:
-  default_config_hash: cZKkOKi19Ed7ObjDV1zUPjaUMHyqnzdH-d4FE-cqcXw
 id: node.dl_biography.field_dl_email_address
 field_name: field_dl_email_address
 entity_type: node

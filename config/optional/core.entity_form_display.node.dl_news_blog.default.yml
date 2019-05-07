@@ -1,4 +1,3 @@
-uuid: be477a4a-4a4f-4f8a-9b22-49215c81f8b0
 langcode: en
 status: true
 dependencies:
@@ -14,8 +13,6 @@ dependencies:
     - entity_browser
     - path
     - text
-_core:
-  default_config_hash: chPNgwXoKfVrqbgnNlliA4snYD-_6xBwuL75nMwF1F0
 id: node.dl_news_blog.default
 targetEntityType: node
 bundle: dl_news_blog
