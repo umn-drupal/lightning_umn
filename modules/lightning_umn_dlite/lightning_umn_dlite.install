@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * Implements hook_install().
+ */
+function lightning_umn_dlite_install() {
+  // Roleassign config causing error in config/install and not getting picked up
+  // in config/optional.
+  $config_factory = \Drupal::configFactory();
+  $editable = $config_factory->getEditable('roleassign.settings');
+  $new_config = [
+    'roleassign_roles' => [
+      'dl_contributor' => 'dl_contributor',
+      'dl_content_type_manager' => 'dl_content_type_manager',
+      'dl_advanced_site_builder' => 'dl_advanced_site_builder',
+      'dl_access_manager' => 'dl_access_manager',
+      'dl_site_owner' => 'dl_site_owner',
+      'administrator' => '0',
+    ]
+  ];
+  $editable->setData($new_config);
+  $editable->save();
+}
