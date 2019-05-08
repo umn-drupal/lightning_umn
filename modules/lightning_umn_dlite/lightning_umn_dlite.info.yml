@@ -4,5 +4,7 @@ core: 8.x
 package: UMN
 type: module
 dependencies:
+    - lightning_umn_folwell
     - auto_entitylabel
     - roleassign
+    - module_filter
