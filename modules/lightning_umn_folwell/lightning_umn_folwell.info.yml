@@ -1,0 +1,14 @@
+name: Lightning UMN Folwell Installer
+description: Install Folwell configurations
+core: 8.x
+package: UMN
+type: module
+dependencies:
+    - folwell_paragraphs
+    - folwell_blocks
+    - folwell_wysiwyg
+    - umn_superfish
+    - fontawesome
+    - responsive_menu
+    - menu_block
+

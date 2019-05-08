@@ -14,7 +14,6 @@ install:
   - admin_toolbar
   - admin_toolbar_tools
   - imagick
-  - acquia_purge
   - field_group
   - select_or_other
   - address
@@ -30,20 +29,10 @@ install:
   - slick_video
   - fpa
   - admin_toolbar_links_access_filter
-  - acquia_connector
-  - simplesamlphp_auth
-  - memcache
   - honeypot
-  - umn_superfish
-  - folwell_wysiwyg
-  - folwell_paragraphs
   - layout_builder_modal
   - layout_builder_restrictions
   - radix_layouts
-  - fontawesome
-  - responsive_menu
-  - menu_block
-  - folwell_blocks
 
 themes:
   - folwell
