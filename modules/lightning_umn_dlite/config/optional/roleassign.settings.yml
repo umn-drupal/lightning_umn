@@ -1,7 +1,0 @@
-roleassign_roles:
-  dl_contributor: dl_contributor
-  dl_content_type_manager: dl_content_type_manager
-  dl_advanced_site_builder: dl_advanced_site_builder
-  dl_access_manager: dl_access_manager
-  dl_site_owner: dl_site_owner
-  administrator: '0'
