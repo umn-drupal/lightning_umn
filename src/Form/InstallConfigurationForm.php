@@ -49,9 +49,7 @@ class InstallConfigurationForm extends FormBase {
       $modules_to_install[] = 'lightning_umn_acquia';
     }
     if ($form_values['folwell']) {
-      $modules_to_install[] = 'folwell_paragraphs';
-      $modules_to_install[] = 'folwell_blocks';
-      $modules_to_install[] = 'folwell_wysiwyg';
+      $modules_to_install[] = 'lightning_umn_folwell';
     }
     if ($form_values['drupal_lite']) {
       $modules_to_install[] = 'lightning_umn_dlite';
@@ -64,7 +62,7 @@ class InstallConfigurationForm extends FormBase {
         $module_installer->install([$module], TRUE);
       }
     }
-     drupal_set_message('this came from the submit handler!!!');
+//     drupal_set_message('this came from the submit handler!!!');
   }
 
 }
