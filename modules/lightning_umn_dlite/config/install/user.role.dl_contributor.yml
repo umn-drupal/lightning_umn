@@ -4,6 +4,8 @@ dependencies:
   module:
     - lightning_core
 third_party_settings:
+  lightning_core:
+    description: ''
 id: dl_contributor
 label: Contributor
 weight: 13
