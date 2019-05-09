@@ -9,7 +9,7 @@ login_link_display_name: "University of Minnesota Single Sign on"
 role:
   population: ""
   eval_every_time: false
-register_users: true
+register_users: false
 allow:
   set_drupal_pwd: false
   default_login: true
