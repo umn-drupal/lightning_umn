@@ -33,6 +33,10 @@ install:
   - layout_builder_modal
   - layout_builder_restrictions
   - radix_layouts
+  - umn_superfish
+  - fontawesome
+  - responsive_menu
+  - menu_block
 
 themes:
   - folwell

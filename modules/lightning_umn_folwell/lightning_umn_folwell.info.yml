@@ -7,8 +7,4 @@ dependencies:
     - folwell_paragraphs
     - folwell_blocks
     - folwell_wysiwyg
-    - umn_superfish
-    - fontawesome
-    - responsive_menu
-    - menu_block
 
