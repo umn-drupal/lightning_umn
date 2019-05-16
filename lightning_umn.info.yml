@@ -13,6 +13,7 @@ install:
   - umn_search
   - admin_toolbar
   - admin_toolbar_tools
+  - environment_indicator
   - imagick
   - field_group
   - select_or_other
