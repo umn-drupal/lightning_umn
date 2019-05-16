@@ -15,8 +15,14 @@ class InstallConfigurationForm extends FormBase {
     $form['acquia'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Install site with Acquia settings'),
-      '#default_value' => TRUE
     ];
+    if (!empty($_ENV['AH_SITE_ENVIRONMENT'])) {
+      $form['acquia']['#disabled'] = TRUE;
+      $form['acquia']['#default_value'] = TRUE;
+    }
+    else {
+      $form['acquia']['#default_value'] = FALSE;
+    }
     $form['drupal_lite'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Install as a Drupal Lite Site'),
@@ -33,6 +39,18 @@ class InstallConfigurationForm extends FormBase {
       '#type' => 'checkbox',
       '#title' => $this->t('Install Folwell Components Modules'),
       '#default_value' => TRUE,
+      '#states' => [
+        'disabled' => [
+          ':input[name="drupal_lite"]' => [
+            'checked' => TRUE,
+          ],
+        ],
+        'checked' => [
+          ':input[name="drupal_lite"]' => [
+            'checked' => TRUE,
+          ],
+        ],
+      ],
     ];
     $form['actions'] = [
       'submit' => [
