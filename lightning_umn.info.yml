@@ -33,6 +33,7 @@ install:
   - layout_builder_modal
   - layout_builder_restrictions
   - radix_layouts
+  - ctools_block
   - umn_superfish
   - fontawesome
   - responsive_menu
@@ -44,6 +45,7 @@ themes:
 
 base profile: lightning
 exclude:
+  - lightning_layout
   - lightning_page
   - lightning_landing_page
   - lightning_roles

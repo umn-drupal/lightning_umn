@@ -25,6 +25,10 @@ class InstallConfigurationForm extends FormBase {
       '#type' => 'checkbox',
       '#title' => $this->t('Install Lightning Workflow Components'),
     ];
+    $form['layout'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Install Lightning Layout Components'),
+    ];
     $form['folwell'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Install Folwell Components Modules'),
@@ -56,6 +60,10 @@ class InstallConfigurationForm extends FormBase {
     }
     if ($form_values['workflow']) {
       $modules_to_install[] = 'lightning_workflow';
+    }
+    if ($form_values['layout']) {
+      $modules_to_install[] = 'lightning_page';
+      $modules_to_install[] = 'lightning_layout';
     }
     foreach ($modules_to_install as $module) {
       if (!$module_handler->moduleExists($module)) {
