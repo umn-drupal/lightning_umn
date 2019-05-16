@@ -3,6 +3,7 @@ status: true
 dependencies:
   config:
     - entity_browser.browser.media_browser
+    - field.field.node.dl_general_page.body
     - field.field.node.dl_general_page.field_dl_body
     - field.field.node.dl_general_page.field_dl_media
     - field.field.node.dl_general_page.field_dl_paragraphs
@@ -58,8 +59,14 @@ content:
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: ''
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
     third_party_settings: {  }
-    type: entity_reference_paragraphs
+    type: paragraphs
     region: content
   field_dl_tags:
     weight: 11
@@ -126,4 +133,5 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  body: true
   layout_builder__layout: true

@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.node.dl_general_page.body
     - field.field.node.dl_general_page.field_dl_body
     - field.field.node.dl_general_page.field_dl_media
     - field.field.node.dl_general_page.field_dl_paragraphs
@@ -12,8 +13,7 @@ dependencies:
     - ctools_block
     - layout_builder
     - layout_builder_restrictions
-    - layout_discovery
-    - panelizer
+    - radix_layouts
     - text
     - user
 third_party_settings:
@@ -22,22 +22,31 @@ third_party_settings:
     enabled: true
     sections:
       -
-        layout_id: layout_onecol
+        layout_id: radix_boxton
         layout_settings: {  }
         components:
-          60b972e5-4c2f-4464-b89a-fc14d8d1171e:
-            uuid: 60b972e5-4c2f-4464-b89a-fc14d8d1171e
-            region: content
+          ab683c4d-e81f-4cd6-b436-fe648626af41:
+            uuid: ab683c4d-e81f-4cd6-b436-fe648626af41
+            region: contentmain
             configuration:
+              id: 'entity_field:node:field_dl_media'
+              label: Media
+              provider: ctools_block
               label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+                weight: 0
               context_mapping:
                 entity: layout_builder.entity
-              id: 'extra_field_block:node:dl_general_page:links'
             additional: {  }
             weight: 0
           04171398-7b1d-4fd1-b34c-db9bfdc1a1fc:
             uuid: 04171398-7b1d-4fd1-b34c-db9bfdc1a1fc
-            region: content
+            region: contentmain
             configuration:
               id: 'field_block:node:dl_general_page:field_dl_body'
               label: Body
@@ -51,10 +60,10 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
             additional: {  }
-            weight: 2
+            weight: 1
           27792d11-af05-488a-b618-4e99c3ba6eb5:
             uuid: 27792d11-af05-488a-b618-4e99c3ba6eb5
-            region: content
+            region: contentmain
             configuration:
               id: 'entity_field:node:field_dl_tags'
               label: Tags
@@ -71,17 +80,17 @@ third_party_settings:
                 entity: layout_builder.entity
             additional: {  }
             weight: 3
-          ab683c4d-e81f-4cd6-b436-fe648626af41:
-            uuid: ab683c4d-e81f-4cd6-b436-fe648626af41
-            region: content
+          5a92d0e7-0d86-479c-b0b5-2c17ada80f41:
+            uuid: 5a92d0e7-0d86-479c-b0b5-2c17ada80f41
+            region: contentmain
             configuration:
-              id: 'entity_field:node:field_dl_media'
-              label: Media
+              id: 'entity_field:node:field_dl_paragraphs'
+              label: 'Folwell Components'
               provider: ctools_block
               label_display: '0'
               formatter:
                 label: hidden
-                type: entity_reference_entity_view
+                type: entity_reference_revisions_entity_view
                 settings:
                   view_mode: default
                 third_party_settings: {  }
@@ -89,20 +98,15 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
             additional: {  }
-            weight: 4
+            weight: 2
         third_party_settings: {  }
-  panelizer:
-    enable: false
-    custom: false
-    allow: false
-    default: default
   layout_builder_restrictions:
     allowed_blocks:
       'Chaos tools': {  }
       Content:
         - 'entity_field:node:field_dl_body'
-        - 'entity_field:node:field_dl_media'
         - 'entity_field:node:field_dl_paragraphs'
+        - 'entity_field:node:field_dl_media'
         - 'entity_field:node:field_dl_tags'
         - 'entity_field:node:title'
       'Content fields': {  }
@@ -111,14 +115,10 @@ third_party_settings:
       'Entity Block': {  }
       Forms: {  }
       Help: {  }
-      'Lists (Views)':
-        - 'views_block:dl_biographies-block_1'
-        - 'views_block:dl_general_page-block_1'
-        - 'views_block:dl_news_blog-block_1'
+      'Lists (Views)': {  }
       Menus: {  }
       'Moderation Dashboard': {  }
       'Responsive menu': {  }
-      'SimpleSAMLphp Authentication': {  }
       Superfish: {  }
       System:
         - system_breadcrumb_block
@@ -126,7 +126,6 @@ third_party_settings:
       User: {  }
       'User fields': {  }
     allowed_layouts:
-      - layout_onecol
       - radix_bryant_flipped
       - radix_bartlett_flipped
       - radix_bartlett
@@ -176,6 +175,7 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  body: true
   field_dl_media: true
   field_dl_paragraphs: true
   field_dl_tags: true

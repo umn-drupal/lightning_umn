@@ -14,7 +14,6 @@ dependencies:
     - layout_builder
     - layout_builder_restrictions
     - layout_discovery
-    - panelizer
     - user
 third_party_settings:
   layout_builder:
@@ -65,11 +64,6 @@ third_party_settings:
             additional: {  }
             weight: 1
         third_party_settings: {  }
-  panelizer:
-    enable: false
-    custom: false
-    allow: false
-    default: default
   layout_builder_restrictions:
     allowed_blocks:
       'Chaos tools': {  }

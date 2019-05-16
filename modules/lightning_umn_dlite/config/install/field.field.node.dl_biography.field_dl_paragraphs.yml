@@ -4,22 +4,18 @@ dependencies:
   config:
     - field.storage.node.field_dl_paragraphs
     - node.type.dl_biography
-    - paragraphs.paragraphs_type.fa_table
-    - paragraphs.paragraphs_type.fa_text_with_optional_header
     - paragraphs.paragraphs_type.folwell_accordion
     - paragraphs.paragraphs_type.folwell_callout
     - paragraphs.paragraphs_type.folwell_image
     - paragraphs.paragraphs_type.folwell_overlay_slideshow
     - paragraphs.paragraphs_type.folwell_slideshow
-    - paragraphs.paragraphs_type.fs_overlay_slide
-    - paragraphs.paragraphs_type.fs_slide
   module:
     - entity_reference_revisions
 id: node.dl_biography.field_dl_paragraphs
 field_name: field_dl_paragraphs
 entity_type: node
 bundle: dl_biography
-label: Paragraphs
+label: 'Folwell Components'
 description: ''
 required: false
 translatable: false
@@ -30,25 +26,21 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      fa_table: fa_table
-      fa_text_with_optional_header: fa_text_with_optional_header
       folwell_accordion: folwell_accordion
       folwell_callout: folwell_callout
       folwell_image: folwell_image
       folwell_overlay_slideshow: folwell_overlay_slideshow
       folwell_slideshow: folwell_slideshow
-      fs_overlay_slide: fs_overlay_slide
-      fs_slide: fs_slide
     target_bundles_drag_drop:
       fa_accordion_item:
         weight: 15
         enabled: false
       fa_table:
-        enabled: true
         weight: 16
+        enabled: false
       fa_text_with_optional_header:
-        enabled: true
         weight: 17
+        enabled: false
       folwell_100_image:
         weight: 18
         enabled: false
@@ -77,9 +69,9 @@ settings:
         enabled: true
         weight: 26
       fs_overlay_slide:
-        enabled: true
         weight: 27
+        enabled: false
       fs_slide:
-        enabled: true
         weight: 28
+        enabled: false
 field_type: entity_reference_revisions
