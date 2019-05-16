@@ -82,6 +82,7 @@ class InstallConfigurationForm extends FormBase {
     if ($form_values['layout']) {
       $modules_to_install[] = 'lightning_page';
       $modules_to_install[] = 'lightning_layout';
+      $modules_to_install[] = 'lightning_landing_page';
     }
     foreach ($modules_to_install as $module) {
       if (!$module_handler->moduleExists($module)) {
