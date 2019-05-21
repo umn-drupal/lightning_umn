@@ -29,7 +29,7 @@ function lightning_umn_install_tasks(&$install_state) {
       'display_name' => t('Install Configuration Options'),
       'type' => 'form',
       'function' => InstallConfigurationForm::class
-    ]
+    ],
   ];
 
   return $tasks;

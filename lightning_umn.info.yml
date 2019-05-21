@@ -54,3 +54,4 @@ exclude:
   - lightning_preview
   - lightning_search
   - lightning_media_slideshow
+  - lightning_api
