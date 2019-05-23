@@ -10,7 +10,7 @@ dependencies:
     - text
     - user
 id: dl_news_blog
-label: 'News / Blog'
+label: 'List of News / Blogs'
 module: views
 description: 'Consolidation of news and blogs'
 tag: ''

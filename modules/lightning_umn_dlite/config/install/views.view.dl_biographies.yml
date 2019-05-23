@@ -11,7 +11,7 @@ dependencies:
     - node
     - user
 id: dl_biographies
-label: Biographies
+label: 'List of Biographies'
 module: views
 description: 'Shows biographical data'
 tag: ''
@@ -160,7 +160,7 @@ display:
           expose:
             label: ''
           granularity: second
-      title: Biographies
+      title: 'List of Biographies'
       header: {  }
       footer: {  }
       empty: {  }

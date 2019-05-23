@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - entity_browser.browser.media_browser
-    - field.field.node.dl_general_page.body
     - field.field.node.dl_general_page.field_dl_body
     - field.field.node.dl_general_page.field_dl_media
     - field.field.node.dl_general_page.field_dl_paragraphs
@@ -133,5 +132,4 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  body: true
   layout_builder__layout: true

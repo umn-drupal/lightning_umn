@@ -2,7 +2,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.dl_general_page.body
     - field.field.node.dl_general_page.field_dl_body
     - field.field.node.dl_general_page.field_dl_media
     - field.field.node.dl_general_page.field_dl_paragraphs
@@ -22,12 +21,12 @@ third_party_settings:
     enabled: true
     sections:
       -
-        layout_id: radix_boxton
+        layout_id: radix_brenham_flipped
         layout_settings: {  }
         components:
           ab683c4d-e81f-4cd6-b436-fe648626af41:
             uuid: ab683c4d-e81f-4cd6-b436-fe648626af41
-            region: contentmain
+            region: header
             configuration:
               id: 'entity_field:node:field_dl_media'
               label: Media
@@ -60,7 +59,26 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
             additional: {  }
-            weight: 1
+            weight: 0
+          5a92d0e7-0d86-479c-b0b5-2c17ada80f41:
+            uuid: 5a92d0e7-0d86-479c-b0b5-2c17ada80f41
+            region: sidebar
+            configuration:
+              id: 'entity_field:node:field_dl_paragraphs'
+              label: 'Folwell Components'
+              provider: ctools_block
+              label_display: '0'
+              formatter:
+                label: hidden
+                type: entity_reference_revisions_entity_view
+                settings:
+                  view_mode: default
+                third_party_settings: {  }
+                weight: 0
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 0
           27792d11-af05-488a-b618-4e99c3ba6eb5:
             uuid: 27792d11-af05-488a-b618-4e99c3ba6eb5
             region: contentmain
@@ -79,37 +97,18 @@ third_party_settings:
               context_mapping:
                 entity: layout_builder.entity
             additional: {  }
-            weight: 3
-          5a92d0e7-0d86-479c-b0b5-2c17ada80f41:
-            uuid: 5a92d0e7-0d86-479c-b0b5-2c17ada80f41
-            region: contentmain
-            configuration:
-              id: 'entity_field:node:field_dl_paragraphs'
-              label: 'Folwell Components'
-              provider: ctools_block
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: entity_reference_revisions_entity_view
-                settings:
-                  view_mode: default
-                third_party_settings: {  }
-                weight: 0
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: 2
+            weight: 1
         third_party_settings: {  }
   layout_builder_restrictions:
     allowed_blocks:
       'Chaos tools': {  }
-      Content:
-        - 'entity_field:node:field_dl_body'
-        - 'entity_field:node:field_dl_paragraphs'
-        - 'entity_field:node:field_dl_media'
-        - 'entity_field:node:field_dl_tags'
-        - 'entity_field:node:title'
-      'Content fields': {  }
+      Content: {  }
+      'Content fields':
+        - 'field_block:node:dl_general_page:field_dl_body'
+        - 'field_block:node:dl_general_page:field_dl_paragraphs'
+        - 'field_block:node:dl_general_page:field_dl_media'
+        - 'field_block:node:dl_general_page:field_dl_tags'
+        - 'field_block:node:dl_general_page:title'
       core:
         - page_title_block
       'Entity Block': {  }
@@ -119,6 +118,7 @@ third_party_settings:
       Menus: {  }
       'Moderation Dashboard': {  }
       'Responsive menu': {  }
+      'SimpleSAMLphp Authentication': {  }
       Superfish: {  }
       System:
         - system_breadcrumb_block
@@ -175,7 +175,6 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  body: true
   field_dl_media: true
   field_dl_paragraphs: true
   field_dl_tags: true

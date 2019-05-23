@@ -10,7 +10,7 @@ id: node.dl_news_blog.field_dl_body
 field_name: field_dl_body
 entity_type: node
 bundle: dl_news_blog
-label: Body
+label: 'News/Blog Body'
 description: ''
 required: false
 translatable: true

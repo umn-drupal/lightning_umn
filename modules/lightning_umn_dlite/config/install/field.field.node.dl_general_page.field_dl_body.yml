@@ -10,7 +10,7 @@ id: node.dl_general_page.field_dl_body
 field_name: field_dl_body
 entity_type: node
 bundle: dl_general_page
-label: Body
+label: 'General Page Body'
 description: ''
 required: false
 translatable: false

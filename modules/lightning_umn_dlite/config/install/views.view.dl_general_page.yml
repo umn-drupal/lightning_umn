@@ -10,7 +10,7 @@ dependencies:
     - text
     - user
 id: dl_general_page
-label: 'General Page'
+label: 'List of General Pages'
 module: views
 description: ''
 tag: ''

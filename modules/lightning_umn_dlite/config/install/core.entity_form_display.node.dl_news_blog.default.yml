@@ -6,11 +6,13 @@ dependencies:
     - field.field.node.dl_news_blog.field_dl_body
     - field.field.node.dl_news_blog.field_dl_lede
     - field.field.node.dl_news_blog.field_dl_media
+    - field.field.node.dl_news_blog.field_dl_paragraphs
     - field.field.node.dl_news_blog.field_dl_tags
     - field.field.node.dl_news_blog.layout_builder__layout
     - node.type.dl_news_blog
   module:
     - entity_browser
+    - entity_reference_revisions
     - path
     - text
 id: node.dl_news_blog.default
@@ -56,6 +58,15 @@ content:
       field_widget_replace: false
     region: content
     third_party_settings: {  }
+  field_dl_paragraphs:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_autocomplete
+    region: content
   field_dl_tags:
     weight: 7
     settings:

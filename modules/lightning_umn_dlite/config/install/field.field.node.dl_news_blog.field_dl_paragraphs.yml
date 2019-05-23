@@ -1,0 +1,77 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_dl_paragraphs
+    - node.type.dl_news_blog
+    - paragraphs.paragraphs_type.folwell_accordion
+    - paragraphs.paragraphs_type.folwell_callout
+    - paragraphs.paragraphs_type.folwell_image
+    - paragraphs.paragraphs_type.folwell_overlay_slideshow
+    - paragraphs.paragraphs_type.folwell_slideshow
+  module:
+    - entity_reference_revisions
+id: node.dl_news_blog.field_dl_paragraphs
+field_name: field_dl_paragraphs
+entity_type: node
+bundle: dl_news_blog
+label: 'Folwell Components'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      folwell_accordion: folwell_accordion
+      folwell_callout: folwell_callout
+      folwell_image: folwell_image
+      folwell_overlay_slideshow: folwell_overlay_slideshow
+      folwell_slideshow: folwell_slideshow
+    target_bundles_drag_drop:
+      fa_accordion_item:
+        weight: 15
+        enabled: false
+      fa_table:
+        weight: 16
+        enabled: false
+      fa_text_with_optional_header:
+        weight: 17
+        enabled: false
+      folwell_100_image:
+        weight: 18
+        enabled: false
+      folwell_20_image:
+        weight: 19
+        enabled: false
+      folwell_33_image:
+        weight: 20
+        enabled: false
+      folwell_50_image:
+        weight: 21
+        enabled: false
+      folwell_accordion:
+        enabled: true
+        weight: 22
+      folwell_callout:
+        enabled: true
+        weight: 23
+      folwell_image:
+        enabled: true
+        weight: 24
+      folwell_overlay_slideshow:
+        enabled: true
+        weight: 25
+      folwell_slideshow:
+        enabled: true
+        weight: 26
+      fs_overlay_slide:
+        weight: 27
+        enabled: false
+      fs_slide:
+        weight: 28
+        enabled: false
+field_type: entity_reference_revisions
