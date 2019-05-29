@@ -1,0 +1,10 @@
+<?php
+
+function lightning_umn_dlite_preprocess_field(&$variables) {
+  if ($variables['field_name'] === 'field_dl_tags') {
+    $variables['attributes']['class'][] = 'flex-display-list';
+    foreach ($variables['items'] as $item) {
+      $item['attributes']->addClass('flex-display-list-item');
+    }
+  }
+}
