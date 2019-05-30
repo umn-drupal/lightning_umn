@@ -46,6 +46,8 @@ themes:
 
 base profile: lightning
 exclude:
+  - moderation_dashboard
+  - moderation_sidebar
   - lightning_layout
   - lightning_page
   - lightning_landing_page

@@ -80,6 +80,8 @@ class InstallConfigurationForm extends FormBase {
       $modules_to_install[] = 'lightning_workflow';
     }
     if ($form_values['layout']) {
+      $modules_to_install[] = 'moderation_dashboard';
+      $modules_to_install[] = 'moderation_sidebar';
       $modules_to_install[] = 'lightning_page';
       $modules_to_install[] = 'lightning_layout';
       $modules_to_install[] = 'lightning_landing_page';
