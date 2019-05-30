@@ -81,6 +81,7 @@ permissions:
   - 'switch shortcut sets'
   - 'update any media'
   - 'update media'
+  - 'use text format folwell_ckeditor'
   - 'view all media revisions'
   - 'view all revisions'
   - 'view dl_biography revisions'
