@@ -36,18 +36,21 @@ function lightning_umn_dlite_install() {
       'link' => [
         'uri' => 'internal:/admin/appearance/settings/folwell',
       ],
+      'weight' => 11,
     ],
     [
       'title' => t('Basic Site Settings'),
       'link' => [
         'uri' => 'internal:/admin/config/system/site-information',
       ],
+      'weight' => 12,
     ],
     [
       'title' => t('Add a user'),
       'link' => [
         'uri' => 'internal:/admin/people/create',
       ],
+      'weight' => 13,
     ],
   ];
   foreach ($links as $link) {
