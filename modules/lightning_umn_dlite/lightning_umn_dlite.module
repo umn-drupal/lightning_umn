@@ -8,3 +8,10 @@ function lightning_umn_dlite_preprocess_field(&$variables) {
     }
   }
 }
+
+/**
+ * Implements hook_shortcut_default_set().
+ */
+function lightning_umn_dlite_shortcut_default_set($account) {
+  return 'dl_shortcuts';
+}
