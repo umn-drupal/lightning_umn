@@ -1,3 +1,4 @@
+uuid: 085aca59-afcf-4247-9e76-f75967270161
 langcode: en
 status: true
 dependencies:
@@ -6,12 +7,15 @@ dependencies:
 third_party_settings:
   lightning_core:
     description: ''
+_core:
+  default_config_hash: DYFyfGzhdyyqg0yFihihgeTAzAGALrFjkGzq348MLYg
 id: dl_contributor
 label: Contributor
 weight: 13
 is_admin: null
 permissions:
   - 'access administration pages'
+  - 'access ckeditor_media_browser entity browser pages'
   - 'access content overview'
   - 'access contextual links'
   - 'access files overview'
@@ -19,7 +23,6 @@ permissions:
   - 'access media overview'
   - 'access media_browser entity browser pages'
   - 'access shortcuts'
-  - 'access toolbar'
   - 'administer menu'
   - 'configure all dl_biography node layout overrides'
   - 'configure all dl_general_page node layout overrides'
@@ -36,6 +39,7 @@ permissions:
   - 'create instagram media'
   - 'create media'
   - 'create page content'
+  - 'create terms in dl_tags'
   - 'create tweet media'
   - 'create video media'
   - 'delete dl_biography revisions'
@@ -67,6 +71,7 @@ permissions:
   - 'edit own instagram media'
   - 'edit own tweet media'
   - 'edit own video media'
+  - 'edit terms in dl_tags'
   - 'never autoplay videos'
   - 'notify of path changes'
   - 'revert all revisions'
@@ -76,11 +81,11 @@ permissions:
   - 'switch shortcut sets'
   - 'update any media'
   - 'update media'
-  - 'use text format folwell_ckeditor'
   - 'view all media revisions'
   - 'view all revisions'
   - 'view dl_biography revisions'
   - 'view dl_general_page revisions'
   - 'view dl_news_blog revisions'
   - 'view own unpublished content'
+  - 'view own unpublished media'
   - 'view the administration theme'

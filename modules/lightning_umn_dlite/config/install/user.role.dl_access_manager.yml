@@ -1,3 +1,4 @@
+uuid: d335c815-f073-433c-974b-f019886be6bc
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
 third_party_settings:
   lightning_core:
     description: ''
+_core:
+  default_config_hash: 6DXUbQhIhUt6Mfto5d4QOGw2vM_W1rjGpfBg1CgieL4
 id: dl_access_manager
 label: 'Access Manager'
 weight: 16
@@ -16,4 +19,3 @@ permissions:
   - 'assign roles'
   - 'cancel account'
   - 'select account cancellation method'
-  - 'use text format folwell_ckeditor'

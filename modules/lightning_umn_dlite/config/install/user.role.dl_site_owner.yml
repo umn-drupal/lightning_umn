@@ -1,3 +1,4 @@
+uuid: 5ba6a7d4-596d-49cc-b361-cc94b7096cb6
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
 third_party_settings:
   lightning_core:
     description: ''
+_core:
+  default_config_hash: XY4Go0GmQMKdGuZOPq43DxN93VkCfDlClzLC79_uOn4
 id: dl_site_owner
 label: 'Site owner'
 weight: 17
@@ -17,6 +20,7 @@ permissions:
   - 'administer nodes'
   - 'administer robots.txt'
   - 'administer site configuration'
+  - 'administer themes'
   - 'delete all revisions'
   - 'delete any dl_biography content'
   - 'delete any dl_general_page content'
@@ -28,4 +32,3 @@ permissions:
   - 'delete any tweet media'
   - 'delete any video media'
   - 'update any media'
-  - 'use text format folwell_ckeditor'

@@ -1,3 +1,4 @@
+uuid: dc1d020c-94ac-4cb7-9c0a-9441445a1993
 langcode: en
 status: true
 dependencies:
@@ -6,6 +7,8 @@ dependencies:
 third_party_settings:
   lightning_core:
     description: ''
+_core:
+  default_config_hash: XJFuvEjwH_8TXB_EYCzlfkTw9ZL6Q38Thfztz4Yl6UU
 id: dl_advanced_site_builder
 label: 'Advanced site builder'
 weight: 15
@@ -16,7 +19,6 @@ permissions:
   - 'administer blocks'
   - 'administer consumer entities'
   - 'administer contact_message display'
-  - 'administer contact_message fields'
   - 'administer crop'
   - 'administer crop types'
   - 'administer display modes'
@@ -32,5 +34,4 @@ permissions:
   - 'administer views'
   - 'delete own consumer entities'
   - 'update own consumer entities'
-  - 'use text format folwell_ckeditor'
   - 'view own consumer entities'
