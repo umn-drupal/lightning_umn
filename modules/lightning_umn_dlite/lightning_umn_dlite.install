@@ -1,7 +1,12 @@
 <?php
 
+use Drupal\shortcut\Entity\Shortcut;
+use Drupal\shortcut\Entity\ShortcutSet;
+
 /**
  * Implements hook_install().
+ *
+ * @throws \Drupal\Core\Entity\EntityStorageException
  */
 function lightning_umn_dlite_install() {
   // Roleassign config causing error in config/install and not getting picked up
@@ -20,4 +25,33 @@ function lightning_umn_dlite_install() {
   ];
   $editable->setData($new_config);
   $editable->save();
+
+  ShortcutSet::create([
+    'id' => 'dl_shortcuts',
+    'label' => t('Drupal Lite Shortcuts'),
+  ])->save();
+  $links = [
+    [
+      'title' => t('Folwell Theme Settings'),
+      'link' => [
+        'uri' => 'internal:/admin/appearance/settings/folwell',
+      ],
+    ],
+    [
+      'title' => t('Basic Site Settings'),
+      'link' => [
+        'uri' => 'internal:/admin/config/system/site-information',
+      ],
+    ],
+    [
+      'title' => t('Add a user'),
+      'link' => [
+        'uri' => 'internal:/admin/people/create',
+      ],
+    ],
+  ];
+  foreach ($links as $link) {
+    $link['shortcut_set'] = 'dl_shortcuts';
+    Shortcut::create($link)->save();
+  }
 }
