@@ -11,7 +11,7 @@ field_name: field_dl_portrait_image
 entity_type: node
 bundle: dl_biography
 label: 'Portrait Image'
-description: ''
+description: 'Click the Select Image button. You can select an image that is already in your site, or upload a new image.'
 required: false
 translatable: false
 default_value: {  }

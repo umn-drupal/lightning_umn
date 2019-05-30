@@ -10,7 +10,7 @@ field_name: field_dl_tags
 entity_type: node
 bundle: dl_news_blog
 label: Tags
-description: ''
+description: 'Add tags for this content. Tags are used to categorize content when adding lists to blocks.'
 required: false
 translatable: true
 default_value: {  }

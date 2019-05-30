@@ -13,8 +13,8 @@ id: node.dl_general_page.field_dl_media
 field_name: field_dl_media
 entity_type: node
 bundle: dl_general_page
-label: Media
-description: ''
+label: 'General Page Media'
+description: 'Click Add Media to add a file of type: txt, pdf doc, docx, png, gif, jpg, jpeg. You can choose from files already in your site, or upload a new file.'
 required: false
 translatable: true
 default_value: {  }

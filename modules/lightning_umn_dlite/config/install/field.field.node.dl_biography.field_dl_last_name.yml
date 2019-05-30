@@ -9,7 +9,7 @@ field_name: field_dl_last_name
 entity_type: node
 bundle: dl_biography
 label: 'Last Name'
-description: ''
+description: 'Enter the person’s last name (also known as surname or family name).'
 required: false
 translatable: false
 default_value: {  }

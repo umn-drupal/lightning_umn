@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.dl_general_page.field_dl_body
     - field.field.node.dl_general_page.field_dl_media
     - field.field.node.dl_general_page.field_dl_paragraphs
+    - field.field.node.dl_general_page.field_dl_related_content_tags
     - field.field.node.dl_general_page.field_dl_tags
     - field.field.node.dl_general_page.layout_builder__layout
     - node.type.dl_general_page
@@ -55,17 +56,27 @@ content:
       title: Paragraph
       title_plural: Paragraphs
       edit_mode: open
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
       closed_mode: summary
       autocollapse: none
       closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
       features:
         duplicate: duplicate
         collapse_edit_all: collapse_edit_all
+        add_above: '0'
     third_party_settings: {  }
     type: paragraphs
+    region: content
+  field_dl_related_content_tags:
+    weight: 101
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   field_dl_tags:
     weight: 11

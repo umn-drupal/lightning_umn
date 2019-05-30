@@ -11,7 +11,7 @@ field_name: field_dl_telephone_number
 entity_type: node
 bundle: dl_biography
 label: 'Telephone Number'
-description: ''
+description: 'Enter a telephone number.'
 required: false
 translatable: false
 default_value: {  }

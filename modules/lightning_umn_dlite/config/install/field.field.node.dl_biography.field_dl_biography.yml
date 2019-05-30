@@ -11,7 +11,7 @@ field_name: field_dl_biography
 entity_type: node
 bundle: dl_biography
 label: Biography
-description: ''
+description: 'Enter a biography. Use the toolbar to format the text.'
 required: false
 translatable: false
 default_value: {  }

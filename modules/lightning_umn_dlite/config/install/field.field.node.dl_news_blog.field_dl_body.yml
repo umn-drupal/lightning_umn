@@ -11,7 +11,7 @@ field_name: field_dl_body
 entity_type: node
 bundle: dl_news_blog
 label: 'News/Blog Body'
-description: ''
+description: 'Enter the news/blog body. Use the toolbar to format the text.'
 required: false
 translatable: true
 default_value: {  }

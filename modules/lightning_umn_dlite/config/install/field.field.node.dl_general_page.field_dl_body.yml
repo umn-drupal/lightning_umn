@@ -11,7 +11,7 @@ field_name: field_dl_body
 entity_type: node
 bundle: dl_general_page
 label: 'General Page Body'
-description: ''
+description: 'Enter the general page body. Use the toolbar to format the text.'
 required: false
 translatable: false
 default_value: {  }

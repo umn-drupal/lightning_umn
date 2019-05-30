@@ -10,7 +10,7 @@ third_party_settings:
     parent: 'main:'
 name: News/Blog
 type: dl_news_blog
-description: ''
+description: "The News/Blog content type is for news articles or blog posts. There are fields for title, tags, lede, body, media, and Folwell components. The default layout is a header region at the top, and two columns below with the left column wider than the right. Any media and Folwell components are in the header region. The lede and body are in the left column. The publish date, author’s Internet ID, and tags are in the right column. The layout can be changed, and additional content blocks can be added to the page.\r\n"
 help: ''
 new_revision: true
 preview_mode: 1

@@ -26,23 +26,6 @@ third_party_settings:
         layout_id: radix_brenham_flipped
         layout_settings: {  }
         components:
-          b33373bc-9b2d-4173-a5af-f12a33257d59:
-            uuid: b33373bc-9b2d-4173-a5af-f12a33257d59
-            region: contentmain
-            configuration:
-              id: 'field_block:node:dl_news_blog:field_dl_lede'
-              label: Lede
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: text_default
-                settings: {  }
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-            additional: {  }
-            weight: 3
           bf8c8d5a-64cb-4c78-a7ee-1d0c464d4e13:
             uuid: bf8c8d5a-64cb-4c78-a7ee-1d0c464d4e13
             region: header
@@ -136,8 +119,8 @@ third_party_settings:
                 entity: layout_builder.entity
             additional: {  }
             weight: 1
-          309df01f-9e2f-436b-818e-076bb5ed2e72:
-            uuid: 309df01f-9e2f-436b-818e-076bb5ed2e72
+          f668714e-fd10-4139-9037-e98593eb4355:
+            uuid: f668714e-fd10-4139-9037-e98593eb4355
             region: header
             configuration:
               label_display: '0'

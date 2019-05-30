@@ -11,7 +11,7 @@ field_name: field_dl_lede
 entity_type: node
 bundle: dl_news_blog
 label: Lede
-description: ''
+description: 'Enter a short introduction. It is displayed when a list of news/blog posts is added as a view to a page.'
 required: false
 translatable: false
 default_value: {  }

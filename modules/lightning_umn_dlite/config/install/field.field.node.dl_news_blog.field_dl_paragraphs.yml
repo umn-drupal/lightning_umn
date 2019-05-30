@@ -16,7 +16,7 @@ field_name: field_dl_paragraphs
 entity_type: node
 bundle: dl_news_blog
 label: 'Folwell Components'
-description: ''
+description: 'Click the drop-down to choose from the list of Folwell components. Learn more at http://folwell.umn.edu.'
 required: false
 translatable: true
 default_value: {  }

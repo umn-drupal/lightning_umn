@@ -7,9 +7,9 @@ dependencies:
     - field.field.node.dl_biography.field_dl_email_address
     - field.field.node.dl_biography.field_dl_first_name
     - field.field.node.dl_biography.field_dl_last_name
+    - field.field.node.dl_biography.field_dl_media
     - field.field.node.dl_biography.field_dl_paragraphs
     - field.field.node.dl_biography.field_dl_portrait_image
-    - field.field.node.dl_biography.field_dl_suffix
     - field.field.node.dl_biography.field_dl_tags
     - field.field.node.dl_biography.field_dl_telephone_number
     - field.field.node.dl_biography.layout_builder__layout
@@ -157,9 +157,9 @@ hidden:
   field_dl_email_address: true
   field_dl_first_name: true
   field_dl_last_name: true
+  field_dl_media: true
   field_dl_paragraphs: true
   field_dl_portrait_image: true
-  field_dl_suffix: true
   field_dl_tags: true
   field_dl_telephone_number: true
   layout_builder__layout: true

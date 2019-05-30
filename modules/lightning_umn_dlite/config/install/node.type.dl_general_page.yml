@@ -10,7 +10,7 @@ third_party_settings:
     parent: 'main:'
 name: 'General Page'
 type: dl_general_page
-description: ''
+description: "The General Page content type is the standard, generic page. It has fields for title, body, media, Folwell components, and tags. The default layout is two column and the left column is wider than the right. The media, body, and tags are in the left column, and Folwell components in the right column. The layout can be changed, and additional content blocks can be added to the page.\r\n"
 help: ''
 new_revision: true
 preview_mode: 1

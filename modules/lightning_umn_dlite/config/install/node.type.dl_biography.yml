@@ -10,7 +10,7 @@ third_party_settings:
     parent: 'main:'
 name: Biography
 type: dl_biography
-description: ''
+description: "The Biography content type is for displaying biographical information. There are fields for first name, last name, portrait image, contact information, tags, and Folwell components. The default layout is two columns with name and biography in the left column, and portrait image, contact information, and Folwell components in the right column. The layout can be changed, and additional content blocks can be added to the page.\r\n"
 help: ''
 new_revision: true
 preview_mode: 1
