@@ -53,6 +53,7 @@ exclude:
   - lightning_landing_page
   - lightning_roles
   - lightning_workflow
+  - lightning_scheduler
   - lightning_preview
   - lightning_search
   - lightning_media_slideshow
