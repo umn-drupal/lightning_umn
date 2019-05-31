@@ -59,11 +59,3 @@ HTML;
     return $output;
   }
 }
-
-/**
- * Implements hook_form_FORM_ID_alter().
- */
-function lightning_umn_form_node_layout_builder_form_alter(&$form, FormStateInterface $form_state, $form_id) {
-  $form['actions']['preview_toggle']['toggle_content_preview']['#default_value'] = FALSE;
-  $form['actions']['preview_toggle']['toggle_content_preview']['#value'] = FALSE;
-}
