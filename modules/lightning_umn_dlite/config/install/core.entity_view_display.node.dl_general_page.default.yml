@@ -37,7 +37,7 @@ third_party_settings:
                 label: hidden
                 type: entity_reference_entity_view
                 settings:
-                  view_mode: default
+                  view_mode: dl_cropped
                 third_party_settings: {  }
                 weight: 0
               context_mapping:
@@ -97,22 +97,6 @@ third_party_settings:
                 weight: 0
               context_mapping:
                 entity: layout_builder.entity
-            additional: {  }
-            weight: 1
-          05ab34d5-2835-467d-9df6-6c48a754ac63:
-            uuid: 05ab34d5-2835-467d-9df6-6c48a754ac63
-            region: header
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:dl_general_page:field_dl_related_content_tags'
-              formatter:
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-                type: entity_reference_label
             additional: {  }
             weight: 1
         third_party_settings: {  }

@@ -38,7 +38,7 @@ third_party_settings:
                 label: hidden
                 type: entity_reference_entity_view
                 settings:
-                  view_mode: default
+                  view_mode: dl_cropped
                 third_party_settings: {  }
               context_mapping:
                 entity: layout_builder.entity
@@ -121,7 +121,7 @@ third_party_settings:
             weight: 1
           f668714e-fd10-4139-9037-e98593eb4355:
             uuid: f668714e-fd10-4139-9037-e98593eb4355
-            region: header
+            region: contentmain
             configuration:
               label_display: '0'
               context_mapping:
@@ -135,12 +135,7 @@ third_party_settings:
                 third_party_settings: {  }
                 type: entity_reference_revisions_entity_view
             additional: {  }
-            weight: 2
-        third_party_settings: {  }
-      -
-        layout_id: radix_boxton
-        layout_settings: {  }
-        components: {  }
+            weight: 5
         third_party_settings: {  }
   layout_builder_restrictions:
     allowed_blocks:

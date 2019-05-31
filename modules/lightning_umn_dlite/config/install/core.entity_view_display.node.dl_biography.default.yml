@@ -149,7 +149,7 @@ third_party_settings:
                 label: hidden
                 type: image
                 settings:
-                  image_style: large
+                  image_style: folwell_third
                   image_link: ''
                 third_party_settings: {  }
               context_mapping:
