@@ -1,4 +1,5 @@
 <?php
+
 namespace Drupal\lightning_umn\Form;
 
 use Drupal\Core\Form\FormBase;
@@ -62,6 +63,9 @@ class InstallConfigurationForm extends FormBase {
     return $form;
   }
 
+  /**
+   * Install appropriate modules on form submit for selected components.
+   */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $form_values = $form_state->getValues();
     $modules_to_install = [];
@@ -92,7 +96,6 @@ class InstallConfigurationForm extends FormBase {
         $module_installer->install([$module], TRUE);
       }
     }
-//     drupal_set_message('this came from the submit handler!!!');
   }
 
 }

@@ -1,5 +1,10 @@
 <?php
 
+/**
+ * Implements template_preprocess_field().
+ *
+ * Assigns classes to DL Tags field for styling.
+ */
 function lightning_umn_dlite_preprocess_field(&$variables) {
   if ($variables['field_name'] === 'field_dl_tags') {
     $variables['attributes']['class'][] = 'flex-display-list';

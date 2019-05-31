@@ -46,6 +46,8 @@ function lightning_umn_form_user_login_form_alter(&$form, FormStateInterface $fo
 
 /**
  * Implements hook_help().
+ *
+ * Add some clarifying text to Layout Builder help.
  */
 function lightning_umn_help($route_name, RouteMatchInterface $route_match) {
   if ($route_match->getRouteObject()->getOption('_layout_builder')) {
