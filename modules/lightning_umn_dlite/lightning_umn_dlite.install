@@ -12,7 +12,7 @@ function lightning_umn_dlite_install() {
   // Roleassign config causing error in config/install and not getting picked up
   // in config/optional.
   $config_factory = \Drupal::configFactory();
-  $editable = $config_factory->getEditable('roleassign.settings');
+  $roleassign_config = $config_factory->getEditable('roleassign.settings');
   $new_config = [
     'roleassign_roles' => [
       'dl_contributor' => 'dl_contributor',
@@ -23,8 +23,15 @@ function lightning_umn_dlite_install() {
       'administrator' => '0',
     ]
   ];
-  $editable->setData($new_config);
-  $editable->save();
+  $roleassign_config->setData($new_config);
+  $roleassign_config->save();
+
+  $mail_config = $config_factory->getEditable('user.mail');
+  $mail_config->set('register_admin_created', [
+    'body' => "[user:display-name],\r\n\r\nA site administrator at [site:name] has created an account for you. You may now log in using your University of Minnesota Internet ID and password by clicking this link or copying and pasting it into your browser:\r\n\r\n[site:url]saml_login\r\n\r\n\r\n--  [site:name] team",
+    'subject' => "An administrator created an account for you at [site:name]"
+  ]);
+  $mail_config->save();
 
   ShortcutSet::create([
     'id' => 'dl_shortcuts',
