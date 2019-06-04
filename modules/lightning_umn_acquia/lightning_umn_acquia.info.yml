@@ -8,3 +8,4 @@ dependencies:
     - simplesamlphp_auth
     - memcache
     - acquia_purge
+    - purge_drush
