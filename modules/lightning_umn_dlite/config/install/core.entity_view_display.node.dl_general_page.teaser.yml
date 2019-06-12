@@ -86,7 +86,6 @@ third_party_settings:
         core:
           - page_title_block
       allowed_layouts:
-        - layout_onecol
         - radix_bryant_flipped
         - radix_bartlett_flipped
         - radix_bartlett
