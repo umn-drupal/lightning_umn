@@ -16,10 +16,9 @@ dependencies:
     - field.field.node.dl_biography.layout_builder__layout
     - node.type.dl_biography
   module:
-    - ctools_block
     - layout_builder
     - layout_builder_restrictions
-    - layout_discovery
+    - radix_layouts
     - user
 third_party_settings:
   layout_builder:
@@ -27,12 +26,12 @@ third_party_settings:
     enabled: true
     sections:
       -
-        layout_id: layout_fourcol_section
+        layout_id: radix_burr_flipped
         layout_settings: {  }
         components:
           68cc4e72-4e23-4204-9472-4bd31e8e141f:
             uuid: 68cc4e72-4e23-4204-9472-4bd31e8e141f
-            region: first
+            region: contentmain
             configuration:
               id: 'field_block:node:dl_biography:field_dl_biography'
               label: Biography
@@ -48,100 +47,86 @@ third_party_settings:
                 entity: layout_builder.entity
             additional: {  }
             weight: 0
-          c63e3479-6989-45f1-948d-c226de57b244:
-            uuid: c63e3479-6989-45f1-948d-c226de57b244
-            region: second
+          61854f2f-1578-44b8-8d39-332962102f95:
+            uuid: 61854f2f-1578-44b8-8d39-332962102f95
+            region: sidebar
             configuration:
-              id: 'entity_field:node:field_dl_portrait_image'
+              id: 'field_block:node:dl_biography:field_dl_portrait_image'
               label: 'Portrait Image'
-              provider: ctools_block
+              provider: layout_builder
               label_display: '0'
               formatter:
                 label: hidden
                 type: image
                 settings:
-                  image_style: folwell_fifth
+                  image_style: folwell_third
                   image_link: ''
                 third_party_settings: {  }
-                weight: 0
               context_mapping:
                 entity: layout_builder.entity
             additional: {  }
             weight: 0
         third_party_settings: {  }
-      -
-        layout_id: layout_twocol_section
-        layout_settings:
-          column_widths: 50-50
-        components: {  }
-        third_party_settings: {  }
-      -
-        layout_id: layout_onecol
-        layout_settings: {  }
-        components: {  }
-        third_party_settings: {  }
   layout_builder_restrictions:
-    allowed_blocks:
-      'Chaos tools': {  }
-      Content:
-        - 'entity_field:node:field_dl_biography'
-        - 'entity_field:node:field_dl_email_address'
-        - 'entity_field:node:field_dl_first_name'
-        - 'entity_field:node:field_dl_last_name'
-        - 'entity_field:node:field_dl_paragraphs'
-        - 'entity_field:node:field_dl_portrait_image'
-        - 'entity_field:node:field_dl_tags'
-        - 'entity_field:node:field_dl_telephone_number'
-        - 'entity_field:node:title'
-      'Content fields': {  }
-      core: {  }
-      'Entity Block': {  }
-      Forms: {  }
-      Help: {  }
-      'Lists (Views)': {  }
-      Menus: {  }
-      'Moderation Dashboard': {  }
-      'Responsive menu': {  }
-      'SimpleSAMLphp Authentication': {  }
-      Superfish: {  }
-      System:
-        - system_breadcrumb_block
-      'UMN Search Form Configuration': {  }
-      User: {  }
-      'User fields': {  }
-    allowed_layouts:
-      - layout_onecol
-      - radix_bryant_flipped
-      - radix_bartlett_flipped
-      - radix_bartlett
-      - radix_boxton
-      - radix_brenham_flipped
-      - radix_brenham
-      - radix_brown
-      - radix_bryant
-      - radix_burr_flipped
-      - radix_burr
-      - radix_geary
-      - radix_harris
-      - radix_hewston_flipped
-      - radix_hewston
-      - radix_mccoppin
-      - radix_moscone_flipped
-      - radix_moscone
-      - radix_phelan
-      - radix_pond
-      - radix_rolph
-      - radix_sanderson_flipped
-      - radix_sanderson
-      - radix_selby_flipped
-      - radix_selby
-      - radix_sutro_double
-      - radix_sutro
-      - radix_taylor_flipped
-      - radix_taylor
-      - radix_webb_flipped
-      - radix_webb
-      - radix_whelan
+    entity_view_mode_restriction:
+      allowed_blocks:
+        'Chaos tools': {  }
+        Content: {  }
+        'Content fields':
+          - 'field_block:node:dl_biography:field_dl_biography'
+          - 'field_block:node:dl_biography:field_dl_email_address'
+          - 'field_block:node:dl_biography:field_dl_first_name'
+          - 'field_block:node:dl_biography:field_dl_paragraphs'
+          - 'field_block:node:dl_biography:field_dl_last_name'
+          - 'field_block:node:dl_biography:field_dl_portrait_image'
+          - 'field_block:node:dl_biography:field_dl_tags'
+          - 'field_block:node:dl_biography:field_dl_telephone_number'
+          - 'field_block:node:dl_biography:title'
+        'Entity Block': {  }
+        Forms: {  }
+        Help: {  }
+        'Lists (Views)': {  }
+        Menus: {  }
+        'Responsive menu': {  }
+        Superfish: {  }
+        System:
+          - system_breadcrumb_block
+        'UMN Search Form Configuration': {  }
+        User: {  }
+        'User fields': {  }
+        core: {  }
+      allowed_layouts:
+        - radix_bryant_flipped
+        - radix_bartlett_flipped
+        - radix_bartlett
+        - radix_boxton
+        - radix_brenham_flipped
+        - radix_brenham
+        - radix_brown
+        - radix_bryant
+        - radix_burr_flipped
+        - radix_burr
+        - radix_geary
+        - radix_harris
+        - radix_hewston_flipped
+        - radix_hewston
+        - radix_mccoppin
+        - radix_moscone_flipped
+        - radix_moscone
+        - radix_phelan
+        - radix_pond
+        - radix_rolph
+        - radix_sanderson_flipped
+        - radix_sanderson
+        - radix_selby_flipped
+        - radix_selby
+        - radix_sutro_double
+        - radix_sutro
+        - radix_taylor_flipped
+        - radix_taylor
+        - radix_webb_flipped
+        - radix_webb
+        - radix_whelan
 id: node.dl_biography.teaser
 targetEntityType: node
 bundle: dl_biography

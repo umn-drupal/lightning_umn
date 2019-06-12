@@ -176,69 +176,67 @@ third_party_settings:
             weight: 14
         third_party_settings: {  }
   layout_builder_restrictions:
-    allowed_blocks:
-      'Chaos tools': {  }
-      Content: {  }
-      'Content fields':
-        - 'field_block:node:dl_biography:field_dl_biography'
-        - 'field_block:node:dl_biography:field_dl_media'
-        - 'field_block:node:dl_biography:field_dl_email_address'
-        - 'field_block:node:dl_biography:field_dl_first_name'
-        - 'field_block:node:dl_biography:field_dl_paragraphs'
-        - 'field_block:node:dl_biography:field_dl_last_name'
-        - 'field_block:node:dl_biography:field_dl_portrait_image'
-        - 'field_block:node:dl_biography:field_dl_suffix'
-        - 'field_block:node:dl_biography:field_dl_tags'
-        - 'field_block:node:dl_biography:field_dl_telephone_number'
-        - 'field_block:node:dl_biography:title'
-      core:
-        - page_title_block
-      'Entity Block': {  }
-      Forms: {  }
-      Help: {  }
-      'Lists (Views)': {  }
-      Menus: {  }
-      'Moderation Dashboard': {  }
-      'Responsive menu': {  }
-      'SimpleSAMLphp Authentication': {  }
-      Superfish: {  }
-      System:
-        - system_breadcrumb_block
-      'UMN Search Form Configuration': {  }
-      User: {  }
-      'User fields': {  }
-    allowed_layouts:
-      - radix_bryant_flipped
-      - radix_bartlett_flipped
-      - radix_bartlett
-      - radix_boxton
-      - radix_brenham_flipped
-      - radix_brenham
-      - radix_brown
-      - radix_bryant
-      - radix_burr_flipped
-      - radix_burr
-      - radix_geary
-      - radix_harris
-      - radix_hewston_flipped
-      - radix_hewston
-      - radix_mccoppin
-      - radix_moscone_flipped
-      - radix_moscone
-      - radix_phelan
-      - radix_pond
-      - radix_rolph
-      - radix_sanderson_flipped
-      - radix_sanderson
-      - radix_selby_flipped
-      - radix_selby
-      - radix_sutro_double
-      - radix_sutro
-      - radix_taylor_flipped
-      - radix_taylor
-      - radix_webb_flipped
-      - radix_webb
-      - radix_whelan
+    entity_view_mode_restriction:
+      allowed_blocks:
+        'Chaos tools': {  }
+        Content: {  }
+        'Content fields':
+          - 'field_block:node:dl_biography:field_dl_biography'
+          - 'field_block:node:dl_biography:field_dl_media'
+          - 'field_block:node:dl_biography:field_dl_email_address'
+          - 'field_block:node:dl_biography:field_dl_first_name'
+          - 'field_block:node:dl_biography:field_dl_paragraphs'
+          - 'field_block:node:dl_biography:field_dl_last_name'
+          - 'field_block:node:dl_biography:field_dl_portrait_image'
+          - 'field_block:node:dl_biography:field_dl_tags'
+          - 'field_block:node:dl_biography:field_dl_telephone_number'
+          - 'field_block:node:dl_biography:title'
+        'Entity Block': {  }
+        Forms: {  }
+        Help: {  }
+        'Lists (Views)': {  }
+        Menus: {  }
+        'Responsive menu': {  }
+        Superfish: {  }
+        System:
+          - system_breadcrumb_block
+        'UMN Search Form Configuration': {  }
+        User: {  }
+        'User fields': {  }
+        core:
+          - page_title_block
+      allowed_layouts:
+        - radix_bryant_flipped
+        - radix_bartlett_flipped
+        - radix_bartlett
+        - radix_boxton
+        - radix_brenham_flipped
+        - radix_brenham
+        - radix_brown
+        - radix_bryant
+        - radix_burr_flipped
+        - radix_burr
+        - radix_geary
+        - radix_harris
+        - radix_hewston_flipped
+        - radix_hewston
+        - radix_mccoppin
+        - radix_moscone_flipped
+        - radix_moscone
+        - radix_phelan
+        - radix_pond
+        - radix_rolph
+        - radix_sanderson_flipped
+        - radix_sanderson
+        - radix_selby_flipped
+        - radix_selby
+        - radix_sutro_double
+        - radix_sutro
+        - radix_taylor_flipped
+        - radix_taylor
+        - radix_webb_flipped
+        - radix_webb
+        - radix_whelan
 id: node.dl_biography.default
 targetEntityType: node
 bundle: dl_biography

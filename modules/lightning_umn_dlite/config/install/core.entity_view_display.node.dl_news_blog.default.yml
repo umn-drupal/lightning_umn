@@ -1,4 +1,3 @@
-uuid: 3294310e-260b-4e01-9e9c-e83d6d8a03ad
 langcode: en
 status: true
 dependencies:
@@ -140,67 +139,66 @@ third_party_settings:
             weight: 5
         third_party_settings: {  }
   layout_builder_restrictions:
-    allowed_blocks:
-      'Chaos tools': {  }
-      Content: {  }
-      'Content fields':
-        - 'field_block:node:dl_news_blog:uid'
-        - 'field_block:node:dl_news_blog:field_dl_paragraphs'
-        - 'field_block:node:dl_news_blog:field_dl_lede'
-        - 'field_block:node:dl_news_blog:field_dl_media'
-        - 'field_block:node:dl_news_blog:field_dl_body'
-        - 'field_block:node:dl_news_blog:title'
-        - 'field_block:node:dl_news_blog:created'
-      core:
-        - page_title_block
-      'Entity Block': {  }
-      Forms: {  }
-      Help: {  }
-      'Lists (Views)': {  }
-      Menus: {  }
-      'Moderation Dashboard': {  }
-      'Responsive menu': {  }
-      'SimpleSAMLphp Authentication': {  }
-      Superfish: {  }
-      System:
-        - system_breadcrumb_block
-      'UMN Search Form Configuration': {  }
-      User: {  }
-      'User fields': {  }
-    allowed_layouts:
-      - radix_bryant_flipped
-      - radix_bartlett_flipped
-      - radix_bartlett
-      - radix_boxton
-      - radix_brenham_flipped
-      - radix_brenham
-      - radix_brown
-      - radix_bryant
-      - radix_burr_flipped
-      - radix_burr
-      - radix_geary
-      - radix_harris
-      - radix_hewston_flipped
-      - radix_hewston
-      - radix_mccoppin
-      - radix_moscone_flipped
-      - radix_moscone
-      - radix_phelan
-      - radix_pond
-      - radix_rolph
-      - radix_sanderson_flipped
-      - radix_sanderson
-      - radix_selby_flipped
-      - radix_selby
-      - radix_sutro_double
-      - radix_sutro
-      - radix_taylor_flipped
-      - radix_taylor
-      - radix_webb_flipped
-      - radix_webb
-      - radix_whelan
-_core:
-  default_config_hash: HLPZdRQlcrghnpMqCVl8V1KojhaE0SPAyPhp-mQwp10
+    entity_view_mode_restriction:
+      allowed_blocks:
+        'Chaos tools': {  }
+        Content: {  }
+        'Content fields':
+          - 'field_block:node:dl_news_blog:uid'
+          - 'field_block:node:dl_news_blog:field_dl_paragraphs'
+          - 'field_block:node:dl_news_blog:field_dl_lede'
+          - 'field_block:node:dl_news_blog:field_dl_media'
+          - 'field_block:node:dl_news_blog:field_dl_body'
+          - 'field_block:node:dl_news_blog:title'
+          - 'field_block:node:dl_news_blog:created'
+        core:
+          - page_title_block
+        'Entity Block': {  }
+        Forms: {  }
+        Help: {  }
+        'Lists (Views)': {  }
+        Menus: {  }
+        'Moderation Dashboard': {  }
+        'Responsive menu': {  }
+        'SimpleSAMLphp Authentication': {  }
+        Superfish: {  }
+        System:
+          - system_breadcrumb_block
+        'UMN Search Form Configuration': {  }
+        User: {  }
+        'User fields': {  }
+      allowed_layouts:
+        - radix_bryant_flipped
+        - radix_bartlett_flipped
+        - radix_bartlett
+        - radix_boxton
+        - radix_brenham_flipped
+        - radix_brenham
+        - radix_brown
+        - radix_bryant
+        - radix_burr_flipped
+        - radix_burr
+        - radix_geary
+        - radix_harris
+        - radix_hewston_flipped
+        - radix_hewston
+        - radix_mccoppin
+        - radix_moscone_flipped
+        - radix_moscone
+        - radix_phelan
+        - radix_pond
+        - radix_rolph
+        - radix_sanderson_flipped
+        - radix_sanderson
+        - radix_selby_flipped
+        - radix_selby
+        - radix_sutro_double
+        - radix_sutro
+        - radix_taylor_flipped
+        - radix_taylor
+        - radix_webb_flipped
+        - radix_webb
+        - radix_whelan
 id: node.dl_news_blog.default
 targetEntityType: node
 bundle: dl_news_blog
