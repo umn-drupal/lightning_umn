@@ -9,7 +9,7 @@ id: node.dl_biography.field_dl_tags
 field_name: field_dl_tags
 entity_type: node
 bundle: dl_biography
-label: Tags
+label: 'Tags for this content'
 description: 'Add tags for this content. Tags are used to categorize content when adding lists to blocks.'
 required: false
 translatable: false
