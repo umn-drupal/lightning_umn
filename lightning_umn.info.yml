@@ -23,6 +23,7 @@ install:
   - simple_gmap
   - telephone
   - editor_advanced_link
+  - anchor_link
   - linkit
   - redirect
   - fast404
