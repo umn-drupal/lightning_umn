@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.dl_condensed
     - node.type.dl_biography
     - node.type.dl_news_blog
     - taxonomy.vocabulary.dl_tags
@@ -60,7 +60,7 @@ display:
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          view_mode: dl_condensed
       fields:
         title:
           id: title
