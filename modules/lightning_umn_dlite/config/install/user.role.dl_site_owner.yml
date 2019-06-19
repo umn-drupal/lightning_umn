@@ -5,7 +5,7 @@ dependencies:
     - lightning_core
 third_party_settings:
   lightning_core:
-    description: ''
+    description: 'View site reports and administer content of all types, site configuration and robots.txt'
 id: dl_site_owner
 label: 'Site owner'
 weight: 17

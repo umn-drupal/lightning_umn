@@ -5,7 +5,7 @@ dependencies:
     - lightning_core
 third_party_settings:
   lightning_core:
-    description: ''
+    description: 'Administer users and assign roles.'
 id: dl_access_manager
 label: 'Access Manager'
 weight: 16

@@ -5,7 +5,7 @@ dependencies:
     - lightning_core
 third_party_settings:
   lightning_core:
-    description: ''
+    description: 'Manage content types, paragraph types, URL aliases and taxonomy.'
 id: dl_content_type_manager
 label: 'Content type manager'
 weight: 14

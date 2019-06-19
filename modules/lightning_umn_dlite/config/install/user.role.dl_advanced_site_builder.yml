@@ -5,7 +5,7 @@ dependencies:
     - lightning_core
 third_party_settings:
   lightning_core:
-    description: ''
+    description: 'Administer blocks, views, media types, images styles, linkit profiles.'
 id: dl_advanced_site_builder
 label: 'Advanced site builder'
 weight: 15

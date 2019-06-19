@@ -5,7 +5,7 @@ dependencies:
     - lightning_core
 third_party_settings:
   lightning_core:
-    description: ''
+    description: 'Create and manage content, configure layout.'
 id: dl_contributor
 label: Contributor
 weight: 13
