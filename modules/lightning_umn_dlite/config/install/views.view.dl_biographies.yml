@@ -2,6 +2,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.dl_condensed
     - core.entity_view_mode.node.teaser
     - field.storage.node.field_dl_portrait_image
     - image.style.folwell_fifth
@@ -191,7 +192,10 @@ display:
         pager: false
         fields: false
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: dl_condensed
       pager:
         type: some
         options:
