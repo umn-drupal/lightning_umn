@@ -7,6 +7,7 @@ weight: 1
 is_admin: false
 permissions:
     - 'access content'
+    - 'access environment indicator'
     - 'access site-wide contact form'
     - 'access toolbar'
     - 'bypass honeypot protection'
