@@ -1,3 +1,4 @@
+uuid: 50d039ef-c3a1-4760-9324-53b8aac0ce0d
 langcode: en
 status: true
 dependencies:
@@ -10,6 +11,8 @@ dependencies:
     - node
     - text
     - user
+_core:
+  default_config_hash: D2mkO_RlwKT0g149X-Fd7wDYfMUTYDgn3vsiaKUAPEQ
 id: dl_news_blog
 label: 'List of News / Blogs'
 module: views
@@ -53,10 +56,13 @@ display:
       pager:
         type: mini
         options:
-          items_per_page: 10
+          items_per_page: 5
           offset: 0
           id: 0
           total_pages: null
+          tags:
+            previous: ‹‹
+            next: ››
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -65,9 +71,6 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          tags:
-            previous: ‹‹
-            next: ››
       style:
         type: default
       row:
@@ -144,6 +147,20 @@ display:
           entity_field: type
           plugin_id: bundle
       sorts:
+        sticky:
+          id: sticky
+          table: node_field_data
+          field: sticky
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: DESC
+          exposed: false
+          expose:
+            label: ''
+          entity_type: node
+          entity_field: sticky
+          plugin_id: standard
         created:
           id: created
           table: node_field_data
@@ -195,10 +212,23 @@ display:
           relationship: none
           view_mode: dl_condensed
       pager:
-        type: some
+        type: mini
         options:
           items_per_page: 5
           offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: ‹‹
+            next: ››
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: false
+            offset_label: Offset
       fields:
         title:
           id: title
@@ -398,6 +428,7 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
@@ -419,3 +450,4 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
+
