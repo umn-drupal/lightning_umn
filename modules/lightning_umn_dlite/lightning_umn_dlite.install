@@ -33,6 +33,12 @@ function lightning_umn_dlite_install() {
   ]);
   $mail_config->save();
 
+  $site_config = $config_factory->getEditable('system.site');
+  $site_config->set('page', [
+    'front' => '/node',
+  ]);
+  $site_config->save();
+
   $document_display = $config_factory->getEditable('core.entity_view_display.media.document.default');
   $document_config = [
     'field_document' => [
