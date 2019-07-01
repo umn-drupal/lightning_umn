@@ -5,8 +5,10 @@
  * Enables modules and site configuration for the Lightning Extender profile.
  */
 
+use Drupal\Core\Config\FileStorage;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
+use Symfony\Component\Yaml\Yaml;
 
 /**
  * Implements hook_form_FORM_ID_alter().
@@ -57,5 +59,67 @@ function lightning_umn_help($route_name, RouteMatchInterface $route_match) {
 HTML;
 
     return $output;
+  }
+}
+
+/**
+ * Reads in new configuration.
+ *
+ * Shamelessly stolen from Bootstrap Paragraphs
+ * (http://drupal.org/project/bootstrap_paragraphs)
+ *
+ * @param string $config_name
+ *   Configuration name.
+ * @param string $module_path
+ *   Base path.
+ */
+function lightning_umn_read_in_new_config($config_name, $module_path, $config_location = 'install') {
+  /** @var \Drupal\Core\Config\StorageInterface $active_storage */
+  $active_storage = \Drupal::service('config.storage');
+  $active_storage->write($config_name, Yaml::parse(
+    file_get_contents($module_path . '/config/' . $config_location . '/' . $config_name . '.yml')
+  ));
+}
+
+/**
+ * Helper function for saving field storage and field instance configs.
+ *
+ * @param array $config_list
+ *   List of configurations to be saved.
+ * @param string $module_path
+ *   Base path.
+ */
+function lightning_umn_add_field_configs(array $config_list, $module_path, $config_location = 'install') {
+  if (count($config_list) === 0) { return; }
+  $config_storage = new FileStorage($module_path . '/config/' . $config_location);
+  foreach ($config_list as $config) {
+    $config_record = $config_storage->read($config);
+    $entity_type = \Drupal::service('config.manager')->getEntityTypeIdByName(
+      $config
+    );
+    /** @var \Drupal\Core\Config\Entity\ConfigEntityStorageInterface $storage */
+    $storage = \Drupal::entityTypeManager()->getStorage($entity_type);
+    $entity = $storage->createFromStorageRecord($config_record);
+    $entity->save();
+  }
+}
+
+/**
+ * Helper function for changing editable configs.
+ *
+ * @param array $config_list
+ *   List of configurations to be saved.
+ * @param string $module_path
+ *   Base path.
+ */
+function lightning_umn_edit_configs(array $config_list, $module_path, $config_location = 'install') {
+  if (count($config_list) === 0) { return; }
+  $config_factory = \Drupal::configFactory();
+  $config_storage = new FileStorage($module_path . '/config/' . $config_location);
+  foreach ($config_list as $config) {
+    $editable = $config_factory->getEditable($config);
+    $new_config = $config_storage->read($config);
+    $editable->setData($new_config);
+    $editable->save();
   }
 }
