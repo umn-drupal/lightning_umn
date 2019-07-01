@@ -1,16 +1,21 @@
+uuid: dc273523-d89d-4b4e-8eb5-f27cf6d0037d
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_dl_paragraphs
     - node.type.dl_news_blog
+    - paragraphs.paragraphs_type.a11y_paragraphs_tabs_wrapper
     - paragraphs.paragraphs_type.folwell_accordion
     - paragraphs.paragraphs_type.folwell_callout
     - paragraphs.paragraphs_type.folwell_image
+    - paragraphs.paragraphs_type.folwell_link_list
     - paragraphs.paragraphs_type.folwell_overlay_slideshow
     - paragraphs.paragraphs_type.folwell_slideshow
   module:
     - entity_reference_revisions
+_core:
+  default_config_hash: '-u5vVkQ60qpJNsdj_fF4UX09m9aaFgQn5lwlOyKs3dY'
 id: node.dl_news_blog.field_dl_paragraphs
 field_name: field_dl_paragraphs
 entity_type: node
@@ -26,11 +31,13 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
+      a11y_paragraphs_tabs_wrapper: a11y_paragraphs_tabs_wrapper
       folwell_accordion: folwell_accordion
       folwell_callout: folwell_callout
       folwell_image: folwell_image
       folwell_overlay_slideshow: folwell_overlay_slideshow
       folwell_slideshow: folwell_slideshow
+      folwell_link_list: folwell_link_list
     target_bundles_drag_drop:
       fa_accordion_item:
         weight: 15
@@ -44,13 +51,22 @@ settings:
       folwell_100_image:
         weight: 18
         enabled: false
+      a11y_paragraphs_tabs_panel:
+        weight: 19
+        enabled: false
       folwell_20_image:
         weight: 19
         enabled: false
       folwell_33_image:
         weight: 20
         enabled: false
+      a11y_paragraphs_tabs_wrapper:
+        enabled: true
+        weight: 20
       folwell_50_image:
+        weight: 21
+        enabled: false
+      a11y_paragraphs_tab_content:
         weight: 21
         enabled: false
       folwell_accordion:
@@ -74,4 +90,7 @@ settings:
       fs_slide:
         weight: 28
         enabled: false
+      folwell_link_list:
+        enabled: true
+        weight: 32
 field_type: entity_reference_revisions
