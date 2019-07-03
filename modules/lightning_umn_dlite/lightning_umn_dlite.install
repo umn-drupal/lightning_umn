@@ -39,6 +39,12 @@ function lightning_umn_dlite_install() {
   ]);
   $site_config->save();
 
+  $front_page = $config_factory->getEditable('views.view.frontpage');
+  $front_page_text = 'No front page content has been created yet.<br/>Follow the <a target="_blank" href="https://it.umn.edu/self-help-guide/drupal-lite-8-create-manage-drupal-lite">User Guide</a> to start building your site.';
+  $front_page->set('display.default.display_options.empty.area_text_custom.content', $front_page_text);
+  $front_page->save();
+
+
   $document_display = $config_factory->getEditable('core.entity_view_display.media.document.default');
   $document_config = [
     'field_document' => [
