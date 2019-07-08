@@ -127,4 +127,14 @@ function lightning_umn_dlite_8001(&$sandbox) {
   foreach ($config_list as $config) {
     lightning_umn_read_in_new_config($config, $module_path);
   }
+
+/**
+ * Update document media type.
+ */
+function lightning_umn_dlite_8002(&$sandbox) {
+  $module_path = drupal_get_path('module', 'lightning_umn_dlite');
+  $config_list = [
+    'field.field.media.document.field_document',
+  ];
+  lightning_umn_read_in_new_config($config_list, $module_path);
 }
