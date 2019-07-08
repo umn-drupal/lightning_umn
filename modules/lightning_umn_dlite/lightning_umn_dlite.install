@@ -117,7 +117,7 @@ function lightning_umn_dlite_install() {
 /**
  * Update paragraph fields with new folwell component types.
  */
-function lightning_umn_dlite_8001(&$sandbox) {
+function lightning_umn_dlite_update_8001(&$sandbox) {
   $module_path = drupal_get_path('module', 'lightning_umn_dlite');
   $config_list = [
     'field.field.node.dl_news_blog.field_dl_paragraphs',
@@ -127,14 +127,15 @@ function lightning_umn_dlite_8001(&$sandbox) {
   foreach ($config_list as $config) {
     lightning_umn_read_in_new_config($config, $module_path);
   }
+}
 
 /**
  * Update document media type.
  */
-function lightning_umn_dlite_8002(&$sandbox) {
+function lightning_umn_dlite_update_8002(&$sandbox) {
   $module_path = drupal_get_path('module', 'lightning_umn_dlite');
   $config_list = [
     'field.field.media.document.field_document',
   ];
-  lightning_umn_read_in_new_config($config_list, $module_path);
+  lightning_umn_edit_configs($config_list, $module_path);
 }
