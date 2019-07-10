@@ -29,6 +29,8 @@ permissions:
   - 'administer taxonomy_term display'
   - 'administer user display'
   - 'administer views'
+  - 'configure tablefield'
   - 'delete own consumer entities'
+  - 'export tablefield'
   - 'update own consumer entities'
   - 'view own consumer entities'
