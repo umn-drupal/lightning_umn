@@ -19,9 +19,7 @@ function lightning_umn_install() {
 
   // Honeypot permission.
   $authenticated_rid = RoleInterface::AUTHENTICATED_ID;
-  $authenticated_role = Role::load($authenticated_rid);
-  $authenticated_role->grantPermission("bypass honeypot protection");
-  $authenticated_role->save();
+  lightning_umn_perm_update($authenticated_rid, ["bypass honeypot protection"]);
 }
 
 /**

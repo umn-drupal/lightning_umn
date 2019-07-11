@@ -9,6 +9,7 @@ use Drupal\Core\Config\FileStorage;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Symfony\Component\Yaml\Yaml;
+use Drupal\user\Entity\Role;
 
 /**
  * Implements hook_form_FORM_ID_alter().
@@ -122,4 +123,12 @@ function lightning_umn_edit_configs(array $config_list, $module_path, $config_lo
     $editable->setData($new_config);
     $editable->save();
   }
+}
+
+function lightning_umn_perm_update($role, array $permissions) {
+  $role = Role::load($role);
+  foreach ($permissions as $permission) {
+    $role->grantPermission($permission);
+  }
+  $role->save();
 }

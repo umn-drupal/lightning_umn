@@ -139,3 +139,23 @@ function lightning_umn_dlite_update_8002(&$sandbox) {
   ];
   lightning_umn_edit_configs($config_list, $module_path);
 }
+
+/**
+ * Update permissions for tablefield users.
+ */
+function lightning_umn_dlite_update_8003(&$sandbox) {
+  $permission_array = [
+    'dl_contributor' => [
+      'addrow tablefield',
+      'import tablefield',
+      'rebuild tablefield',
+    ],
+    'dl_advanced_site_builder' => [
+      'configure tablefield',
+      'export tablefield',
+    ],
+  ];
+  foreach ($permission_array as $role => $perms) {
+    lightning_umn_perm_update($role, $perms);
+  }
+}
