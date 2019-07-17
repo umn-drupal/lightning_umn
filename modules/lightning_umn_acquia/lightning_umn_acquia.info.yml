@@ -9,3 +9,5 @@ dependencies:
     - memcache
     - acquia_purge
     - purge_drush
+    - purge_queuer_coretags
+    - purge_processor_cron
