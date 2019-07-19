@@ -139,3 +139,14 @@ function lightning_umn_dlite_update_8002(&$sandbox) {
   ];
   lightning_umn_edit_configs($config_list, $module_path);
 }
+
+/**
+ * Make alt text required for images.
+ */
+function lightning_umn_dlite_update_8003(&$sandbox) {
+  $module_path = drupal_get_path('module', 'lightning_umn_dlite');
+  $config_list = [
+    'field.field.media.image.image.yml',
+  ];
+  lightning_umn_edit_configs($config_list, $module_path);
+}
