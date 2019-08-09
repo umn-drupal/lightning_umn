@@ -8,7 +8,8 @@ use Drupal\shortcut\Entity\ShortcutSet;
  *
  * @throws \Drupal\Core\Entity\EntityStorageException
  */
-function lightning_umn_dlite_install() {
+function lightning_umn_dlite_install()
+{
   // Roleassign config causing error in config/install and not getting picked up
   // in config/optional.
   $config_factory = \Drupal::configFactory();
@@ -117,7 +118,8 @@ function lightning_umn_dlite_install() {
 /**
  * Update paragraph fields with new folwell component types.
  */
-function lightning_umn_dlite_update_8001(&$sandbox) {
+function lightning_umn_dlite_update_8001(&$sandbox)
+{
   $module_path = drupal_get_path('module', 'lightning_umn_dlite');
   $config_list = [
     'field.field.node.dl_news_blog.field_dl_paragraphs',
@@ -132,7 +134,8 @@ function lightning_umn_dlite_update_8001(&$sandbox) {
 /**
  * Update document media type.
  */
-function lightning_umn_dlite_update_8002(&$sandbox) {
+function lightning_umn_dlite_update_8002(&$sandbox)
+{
   $module_path = drupal_get_path('module', 'lightning_umn_dlite');
   $config_list = [
     'field.field.media.document.field_document',
@@ -143,10 +146,11 @@ function lightning_umn_dlite_update_8002(&$sandbox) {
 /**
  * Make alt text required for images.
  */
-function lightning_umn_dlite_update_8003(&$sandbox) {
+function lightning_umn_dlite_update_8003(&$sandbox)
+{
   $module_path = drupal_get_path('module', 'lightning_umn_dlite');
   $config_list = [
-    'field.field.media.image.image.yml',
+    'field.field.media.image.image',
   ];
   lightning_umn_edit_configs($config_list, $module_path);
 }
@@ -154,7 +158,8 @@ function lightning_umn_dlite_update_8003(&$sandbox) {
 /**
  * Update permissions for tablefield users.
  */
-function lightning_umn_dlite_update_8004(&$sandbox) {
+function lightning_umn_dlite_update_8004(&$sandbox)
+{
   $permission_array = [
     'dl_contributor' => [
       'addrow tablefield',
