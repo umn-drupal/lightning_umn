@@ -113,6 +113,14 @@ function lightning_umn_dlite_install()
     $link['shortcut_set'] = 'dl_shortcuts';
     Shortcut::create($link)->save();
   }
+
+  // Update media field configs - Alt text required for images, expand file
+  // types allowed for documents.
+  $image_config = $config_factory->getEditable('field.field.media.image.image');
+  $image_config->set('settings.alt_field_required', TRUE);
+  $image_config->save();
+
+  _lightning_umn_document_config();
 }
 
 /**
@@ -136,11 +144,7 @@ function lightning_umn_dlite_update_8001(&$sandbox)
  */
 function lightning_umn_dlite_update_8002(&$sandbox)
 {
-  $module_path = drupal_get_path('module', 'lightning_umn_dlite');
-  $config_list = [
-    'field.field.media.document.field_document',
-  ];
-  lightning_umn_edit_configs($config_list, $module_path);
+  // This space intentionally left blank.
 }
 
 /**
@@ -148,11 +152,7 @@ function lightning_umn_dlite_update_8002(&$sandbox)
  */
 function lightning_umn_dlite_update_8003(&$sandbox)
 {
-  $module_path = drupal_get_path('module', 'lightning_umn_dlite');
-  $config_list = [
-    'field.field.media.image.image',
-  ];
-  lightning_umn_edit_configs($config_list, $module_path);
+  // This space intentionally left blank.
 }
 
 /**
@@ -174,4 +174,21 @@ function lightning_umn_dlite_update_8004(&$sandbox)
   foreach ($permission_array as $role => $perms) {
     lightning_umn_perm_update($role, $perms);
   }
+}
+
+/**
+ * Update document media type mime types allowed.
+ */
+function lightning_umn_dlite_update_8005(&$sandbox) {
+  _lightning_umn_document_config();
+}
+
+function _lightning_umn_document_config() {
+  $config_factory = \Drupal::configFactory();
+  $document_config = $config_factory->getEditable('field.field.media.document.field_document');
+  $mime = explode(' ', $document_config->get('settings.file_extensions'));
+  $new_mime = array_merge($mime, ['xls', 'xlsx', 'ppt', 'pptx']);
+  $mime_config = implode(' ', array_unique($new_mime));
+  $document_config->set('settings.file_extensions', $mime_config);
+  $document_config->save();
 }
