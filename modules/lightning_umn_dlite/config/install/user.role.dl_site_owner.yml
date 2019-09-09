@@ -19,6 +19,7 @@ permissions:
   - 'administer robots.txt'
   - 'administer site configuration'
   - 'administer themes'
+  - 'administer umn search'
   - 'delete all revisions'
   - 'delete any dl_biography content'
   - 'delete any dl_general_page content'

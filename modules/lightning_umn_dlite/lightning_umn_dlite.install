@@ -183,6 +183,22 @@ function lightning_umn_dlite_update_8005(&$sandbox) {
   _lightning_umn_document_config();
 }
 
+/**
+ * Enable Google Analytics and update site owner permissions.
+ */
+function lightning_umn_dlite_update_8006(&$sandbox) {
+  $module_handler = \Drupal::service('module_handler');
+  $module_installer = \Drupal::service('module_installer');
+  if (!$module_handler->moduleExists('google_analytics')) {
+    $module_installer->install(['google_analytics'], TRUE);
+  }
+  $permissions = [
+    'administer google analytics',
+    'administer umn search',
+  ];
+  lightning_umn_perm_update('dl_site_owner', $permissions);
+}
+
 function _lightning_umn_document_config() {
   $config_factory = \Drupal::configFactory();
   $document_config = $config_factory->getEditable('field.field.media.document.field_document');
