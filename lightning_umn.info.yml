@@ -41,6 +41,7 @@ install:
   - responsive_menu
   - menu_block
   - google_analytics
+  - dynamic_page_cache
 
 themes:
   - folwell
