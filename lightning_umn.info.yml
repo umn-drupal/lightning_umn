@@ -42,6 +42,7 @@ install:
   - menu_block
   - google_analytics
   - dynamic_page_cache
+  - aggregator
 
 themes:
   - folwell

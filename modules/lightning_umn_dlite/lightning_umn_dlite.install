@@ -199,6 +199,23 @@ function lightning_umn_dlite_update_8006(&$sandbox) {
   lightning_umn_perm_update('dl_site_owner', $permissions);
 }
 
+/**
+ * Enable Aggregator and update advanced site owner permissions.
+ */
+function lightning_umn_dlite_update_8007(&$sandbox) {
+  $module_handler = \Drupal::service('module_handler');
+  $module_installer = \Drupal::service('module_installer');
+  if (!$module_handler->moduleExists('aggregator')) {
+    $module_installer->install(['aggregator'], TRUE);
+  }
+  $permissions = [
+    'administer aggregator_feed display',
+    'administer aggregator_feed fields',
+    'administer aggregator_feed form display',
+  ];
+  lightning_umn_perm_update('dl_site_owner', $permissions);
+}
+
 function _lightning_umn_document_config() {
   $config_factory = \Drupal::configFactory();
   $document_config = $config_factory->getEditable('field.field.media.document.field_document');

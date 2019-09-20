@@ -12,6 +12,9 @@ weight: 15
 is_admin: null
 permissions:
   - 'add consumer entities'
+  - 'administer aggregator_feed display'
+  - 'administer aggregator_feed fields'
+  - 'administer aggregator_feed form display'
   - 'administer block_content display'
   - 'administer blocks'
   - 'administer consumer entities'
