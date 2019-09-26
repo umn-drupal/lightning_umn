@@ -1,4 +1,5 @@
 <?php
+use Drupal\node\NodeTypeInterface;
 
 /**
  * Implements template_preprocess_field().
@@ -19,4 +20,24 @@ function lightning_umn_dlite_preprocess_field(&$variables) {
  */
 function lightning_umn_dlite_shortcut_default_set($account) {
   return 'dl_shortcuts';
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_insert().
+ */
+function lightning_umn_dlite_node_type_insert(NodeTypeInterface $node_type) {
+  // Don't do anything during config sync.
+  if (\Drupal::isConfigSyncing()) {
+    return;
+  }
+  $permissions = [
+        "create " . $node_type->id() . " content",
+        "delete " . $node_type->id() . " revisions",
+        "delete own " . $node_type->id() . " content",
+        "edit any " . $node_type->id() . " content",
+        "edit own " . $node_type->id() . " content",
+        "revert " . $node_type->id() . " revisions",
+        "view " . $node_type->id() . " revisions",
+  ];
+  lightning_umn_perm_update('dl_contributor', $permissions);
 }
