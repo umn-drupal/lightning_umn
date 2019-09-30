@@ -11,3 +11,6 @@ dependencies:
     - purge_drush
     - purge_queuer_coretags
     - purge_processor_cron
+    - purge_tokens
+    - purge_ui
+    - purge_queuer_coretags
