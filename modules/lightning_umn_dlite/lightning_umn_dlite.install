@@ -213,7 +213,7 @@ function lightning_umn_dlite_update_8007(&$sandbox) {
     'administer aggregator_feed fields',
     'administer aggregator_feed form display',
   ];
-  lightning_umn_perm_update('dl_site_owner', $permissions);
+  lightning_umn_perm_update('dl_advanced_site_builder', $permissions);
 }
 
 function _lightning_umn_document_config() {
