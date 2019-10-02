@@ -203,6 +203,12 @@ function lightning_umn_dlite_update_8006(&$sandbox) {
  * Enable Aggregator and update advanced site owner permissions.
  */
 function lightning_umn_dlite_update_8007(&$sandbox) {
+}
+
+/**
+ * Enable Aggregator and update advanced site builder permissions.
+ */
+function lightning_umn_dlite_update_8008(&$sandbox) {
   $module_handler = \Drupal::service('module_handler');
   $module_installer = \Drupal::service('module_installer');
   if (!$module_handler->moduleExists('aggregator')) {
