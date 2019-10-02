@@ -27,7 +27,7 @@ function lightning_umn_dlite_shortcut_default_set($account) {
  */
 function lightning_umn_dlite_node_type_insert(NodeTypeInterface $node_type) {
   // Don't do anything during config sync.
-  if (\Drupal::isConfigSyncing()) {
+  if ( \Drupal::isConfigSyncing() || !\Drupal\user\Entity\Role::load('dl_contributor') ) {
     return;
   }
   $permissions = [
@@ -38,6 +38,6 @@ function lightning_umn_dlite_node_type_insert(NodeTypeInterface $node_type) {
         "edit own " . $node_type->id() . " content",
         "revert " . $node_type->id() . " revisions",
         "view " . $node_type->id() . " revisions",
-  ];
-  lightning_umn_perm_update('dl_contributor', $permissions);
+];
+    lightning_umn_perm_update('dl_contributor', $permissions);
 }
