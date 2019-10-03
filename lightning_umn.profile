@@ -132,3 +132,11 @@ function lightning_umn_perm_update($role, array $permissions) {
   }
   $role->save();
 }
+
+function lightning_umn_perm_remove($role, array $permissions) {
+  $role = Role::load($role);
+  foreach ($permissions as $permission) {
+    $role->revokePermission($permission);
+  }
+  $role->save();
+}
