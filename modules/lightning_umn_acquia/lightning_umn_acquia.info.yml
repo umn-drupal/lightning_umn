@@ -14,3 +14,4 @@ dependencies:
     - purge_tokens
     - purge_ui
     - purge_queuer_coretags
+    - purge_processor_lateruntime
