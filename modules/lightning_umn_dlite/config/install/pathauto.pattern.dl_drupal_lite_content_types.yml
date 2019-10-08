@@ -6,7 +6,7 @@ dependencies:
 id: dl_drupal_lite_content_types
 label: 'Drupal Lite content types'
 type: 'canonical_entities:node'
-pattern: '[node:title]'
+pattern: '[node:menu-link:parents:join-path]/[node:title]'
 selection_criteria:
   29cb86ca-920d-400d-8ab7-a2ef082969b4:
     id: node_type
