@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Ensure sites using Folwell from initial install are enabling the menu_block
+ * module.
+ */
+function lightning_umn_folwell_update_8001(&$sandbox) {
+  $module_handler = \Drupal::service('module_handler');
+  $module_installer = \Drupal::service('module_installer');
+  if (!$module_handler->moduleExists('menu_block')) {
+    $module_installer->install(['menu_block'], TRUE);
+  }
+}
