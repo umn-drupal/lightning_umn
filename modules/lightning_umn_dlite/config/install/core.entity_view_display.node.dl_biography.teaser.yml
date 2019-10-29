@@ -86,6 +86,7 @@ third_party_settings:
         Forms: {  }
         Help: {  }
         'Lists (Views)': {  }
+          - aggregator_feed_block
         Menus: {  }
         'Responsive menu': {  }
         Superfish: {  }

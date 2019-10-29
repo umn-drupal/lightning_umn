@@ -239,6 +239,38 @@ function lightning_umn_dlite_update_8009(&$sandbox) {
   lightning_umn_perm_remove('dl_site_owner', $permissions);
 }
 
+/**
+ * Update advanced site builder permissions by adding aggregator access permisssions.
+ */
+function lightning_umn_dlite_update_8010(&$sandbox) {
+  $module_handler = \Drupal::service('module_handler');
+  $module_installer = \Drupal::service('module_installer');
+  if ($module_handler->moduleExists('aggregator')) {
+    $permissions = [
+      'access news feeds',
+      'administer news feeds',
+    ];
+  }
+  lightning_umn_perm_update('dl_advanced_site_builder', $permissions);
+}
+
+function lightning_umn_dlite_update_8011(&$sandbox)
+{
+  $module_path = drupal_get_path('module', 'lightning_umn_dlite');
+  $config_list = [
+    'core.entity_view_display.node.dl_news_blog.default.yml',	  
+    'core.entity_view_display.node.dl_news_blog.dl_condensed',
+    'core.entity_view_display.node.dl_general_page.teaser',
+    'core.entity_view_display.node.dl_general_page.default',
+    'core.entity_view_display.node.dl_biography.teaser',
+    'core.entity_view_display.node.dl_biography.dl_condensed',
+    'core.entity_view_display.node.dl_biography.default',
+  ];
+  foreach ($config_list as $config) {
+    lightning_umn_read_in_new_config($config, $module_path);
+  }
+}
+
 function _lightning_umn_document_config() {
   $config_factory = \Drupal::configFactory();
   $document_config = $config_factory->getEditable('field.field.media.document.field_document');

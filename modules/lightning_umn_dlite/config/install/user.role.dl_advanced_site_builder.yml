@@ -11,6 +11,7 @@ label: 'Advanced site builder'
 weight: 15
 is_admin: null
 permissions:
+  - 'access news feeds'
   - 'add consumer entities'
   - 'administer aggregator_feed display'
   - 'administer aggregator_feed fields'
@@ -26,6 +27,7 @@ permissions:
   - 'administer linkit profiles'
   - 'administer media display'
   - 'administer media types'
+  - 'administer news feeds'
   - 'administer node display'
   - 'administer paragraph display'
   - 'administer shortcuts'
@@ -37,3 +39,4 @@ permissions:
   - 'export tablefield'
   - 'update own consumer entities'
   - 'view own consumer entities'
+

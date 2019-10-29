@@ -75,6 +75,7 @@ third_party_settings:
         'Entity Block': {  }
         Help: {  }
         'Lists (Views)': {  }
+          - aggregator_feed_block
         Menus: {  }
         'Responsive menu': {  }
         Superfish: {  }
