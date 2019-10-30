@@ -116,7 +116,7 @@ third_party_settings:
         'Entity Block': {  }
         Forms: {  }
         Help: {  }
-        'Lists (Views)': {  }
+        'Lists (Views)':
           - aggregator_feed_block
         Menus: {  }
         'Responsive menu': {  }
