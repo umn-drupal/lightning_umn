@@ -252,7 +252,7 @@ function lightning_umn_dlite_update_8010(&$sandbox) {
     lightning_umn_perm_update('dl_advanced_site_builder', $permissions);
     $module_path = drupal_get_path('module', 'lightning_umn_dlite');
     $config_list = [
-      'core.entity_view_display.node.dl_news_blog.default.yml',
+      'core.entity_view_display.node.dl_news_blog.default',
       'core.entity_view_display.node.dl_news_blog.dl_condensed',
       'core.entity_view_display.node.dl_general_page.teaser',
       'core.entity_view_display.node.dl_general_page.default',
