@@ -48,6 +48,7 @@ permissions:
   - 'administer user_role labels'
   - 'administer view labels'
   - 'administer workflow labels'
+  - 'configure any layout'
   - 'create terms in tags'
   - 'create url aliases'
   - 'customize shortcut links'
