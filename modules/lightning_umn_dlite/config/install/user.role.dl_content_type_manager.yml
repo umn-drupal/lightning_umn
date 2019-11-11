@@ -30,6 +30,7 @@ permissions:
   - 'administer media_type labels'
   - 'administer menu labels'
   - 'administer meta tags'
+  - 'administer node display'
   - 'administer node fields'
   - 'administer node form display'
   - 'administer node_type labels'
