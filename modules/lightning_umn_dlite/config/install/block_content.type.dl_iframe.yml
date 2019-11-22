@@ -1,0 +1,8 @@
+uuid: ed258e61-6316-41ff-b948-6ed26df89b61
+langcode: en
+status: true
+dependencies: {  }
+id: dl_iframe
+label: iFrame
+revision: 1
+description: 'A block that allows you to add an iFrame'

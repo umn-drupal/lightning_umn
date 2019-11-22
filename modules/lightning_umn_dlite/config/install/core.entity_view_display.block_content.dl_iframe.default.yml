@@ -1,0 +1,32 @@
+uuid: 8c6cdcc1-a19f-41e8-b3c7-8197d04f26a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.dl_iframe
+    - field.field.block_content.dl_iframe.field_dl_iframe
+  module:
+    - iframe
+id: block_content.dl_iframe.default
+targetEntityType: block_content
+bundle: dl_iframe
+mode: default
+content:
+  field_dl_iframe:
+    weight: 1
+    label: above
+    settings:
+      url: ''
+      title: ''
+      width: ''
+      height: ''
+      class: ''
+      expose_class: ''
+      frameborder: '0'
+      scrolling: auto
+      transparency: '0'
+      tokensupport: '0'
+    third_party_settings: {  }
+    type: iframe_default
+    region: content
+hidden: {  }
