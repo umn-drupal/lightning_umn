@@ -5,38 +5,36 @@ dependencies:
     - lightning_core
 third_party_settings:
   lightning_core:
-    description: 'Administer blocks, views, media types, images styles, linkit profiles.'
+    description: "Administer blocks, views, media types, images styles, linkit profiles."
 id: dl_advanced_site_builder
-label: 'Advanced site builder'
+label: "Advanced site builder"
 weight: 15
 is_admin: null
 permissions:
-  - 'access news feeds'
-  - 'add consumer entities'
-  - 'administer aggregator_feed display'
-  - 'administer aggregator_feed fields'
-  - 'administer aggregator_feed form display'
-  - 'administer block_content display'
-  - 'administer blocks'
-  - 'administer consumer entities'
-  - 'administer contact_message display'
-  - 'administer crop'
-  - 'administer crop types'
-  - 'administer display modes'
-  - 'administer image styles'
-  - 'administer linkit profiles'
-  - 'administer media display'
-  - 'administer media types'
-  - 'administer news feeds'
-  - 'administer node display'
-  - 'administer paragraph display'
-  - 'administer shortcuts'
-  - 'administer taxonomy_term display'
-  - 'administer user display'
-  - 'administer views'
-  - 'configure tablefield'
-  - 'delete own consumer entities'
-  - 'export tablefield'
-  - 'update own consumer entities'
-  - 'view own consumer entities'
-
+  - "access news feeds"
+  - "add consumer entities"
+  - "administer aggregator_feed display"
+  - "administer aggregator_feed fields"
+  - "administer aggregator_feed form display"
+  - "administer block_content display"
+  - "administer blocks"
+  - "administer consumer entities"
+  - "administer contact_message display"
+  - "administer crop"
+  - "administer crop types"
+  - "administer display modes"
+  - "administer image styles"
+  - "administer linkit profiles"
+  - "administer media display"
+  - "administer media types"
+  - "administer news feeds"
+  - "administer paragraph display"
+  - "administer shortcuts"
+  - "administer taxonomy_term display"
+  - "administer user display"
+  - "administer views"
+  - "configure tablefield"
+  - "delete own consumer entities"
+  - "export tablefield"
+  - "update own consumer entities"
+  - "view own consumer entities"

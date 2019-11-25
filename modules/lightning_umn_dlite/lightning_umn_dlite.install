@@ -293,6 +293,18 @@ function lightning_umn_dlite_update_8011(&$sandbox) {
   lightning_umn_edit_configs($display_configs, $module_path);
 }
 
+/**
+ * Fix layout builder permissions for content type editors
+ */
+function lightning_umn_dlite_update_8012(&$sandbox) {
+  $permissions = [
+    'configure any layout',
+    'administer node display',
+  ];
+  lightning_umn_perm_update('dl_content_type_manager', $permissions);
+  lightning_umn_perm_remove('dl_advanced_site_builder', ['administer node display']);
+}
+
 function _lightning_umn_document_config() {
   $config_factory = \Drupal::configFactory();
   $document_config = $config_factory->getEditable('field.field.media.document.field_document');
