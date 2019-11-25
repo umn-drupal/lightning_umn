@@ -266,6 +266,33 @@ function lightning_umn_dlite_update_8010(&$sandbox) {
   }
 }
 
+/**
+ * Add iframe custom block and add publish date to news blog
+ */
+function lightning_umn_dlite_update_8011(&$sandbox) {
+  $module_path = drupal_get_path('module', 'lightning_umn_dlite');
+  $field_configs = [
+    'block_content.type.dl_iframe',
+    'field.storage.block_content.field_dl_iframe',
+    'field.field.block_content.dl_iframe.field_dl_iframe',
+    'field.storage.node.field_dl_publish_date',
+    'field.field.node.dl_news_blog.field_dl_publish_date',
+  ];
+  $config_list = [
+    'core.entity_form_display.block_content.dl_iframe.default',
+    'core.entity_view_display.block_content.dl_iframe.default',
+  ];
+  foreach ($config_list as $config) {
+      lightning_umn_read_in_new_config($config, $module_path);
+  }
+  lightning_umn_add_field_configs($field_configs, $module_path);
+  $display_configs = [
+    'core.entity_form_display.node.dl_news_blog.default',
+    'core.entity_view_display.node.dl_news_blog.default',
+  ];
+  lightning_umn_edit_configs($display_configs, $module_path);
+}
+
 function _lightning_umn_document_config() {
   $config_factory = \Drupal::configFactory();
   $document_config = $config_factory->getEditable('field.field.media.document.field_document');
